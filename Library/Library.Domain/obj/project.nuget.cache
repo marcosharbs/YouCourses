@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LMoRAGXY66GbT1JsTehIb/y74czh+KB4UGX+1cthhGguZnIHBPGjluwWRoSNsKZQSW0y8G8isJI+4aAQbocH0A==",
+  "dgSpecHash": "fjHVUU+w3gPBIxOagcRnq4jsSwoChSn3PEz0kMJM3X88QQsE07NXoDa3d1Q1s63+CEIDhJkzmsgEKyotP2iZwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\Library.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\marco\\.nuget\\packages\\dawn.guard\\1.12.0\\dawn.guard.1.12.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],

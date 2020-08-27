@@ -20,6 +20,14 @@
         }
       },
       "coverlet.collector/1.2.0": {},
+      "Dawn.Guard/1.12.0": {
+        "runtime": {
+          "lib/netstandard2.0/Dawn.Guard.dll": {
+            "assemblyVersion": "1.12.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "FluentAssertions/5.10.3": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.4.0"
@@ -729,6 +737,9 @@
         }
       },
       "Library.Domain/1.0.0": {
+        "dependencies": {
+          "Dawn.Guard": "1.12.0"
+        },
         "runtime": {
           "Library.Domain.dll": {}
         }
@@ -747,6 +758,13 @@
       "sha512": "sha512-ZB+EGXsVBIn8cew7D3S2c+rgIlokKv1dSwsXEoiFQaNXF/BSxp9Rlfz/jV1ehSWH5XpLitfRxFNW3ok7uPDOXA==",
       "path": "coverlet.collector/1.2.0",
       "hashPath": "coverlet.collector.1.2.0.nupkg.sha512"
+    },
+    "Dawn.Guard/1.12.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-niOoFTH4DO3/c0rBBHgCeWUCzSpgYZLI4+TxiwPyYP0bxZrxSokhyztx5QdsvHfB6Y3ovhK6vYwZr2qD8JdiuQ==",
+      "path": "dawn.guard/1.12.0",
+      "hashPath": "dawn.guard.1.12.0.nupkg.sha512"
     },
     "FluentAssertions/5.10.3": {
       "type": "package",

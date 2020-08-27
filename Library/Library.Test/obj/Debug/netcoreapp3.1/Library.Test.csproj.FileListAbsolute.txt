@@ -100,3 +100,4 @@ C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\De
 C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Dawn.Guard.dll

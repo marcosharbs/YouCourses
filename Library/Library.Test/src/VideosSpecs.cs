@@ -1,7 +1,7 @@
 using System;
 using Xunit;
-using Library.Domain.CourseAggregate.Model;
 using FluentAssertions;
+using Library.Domain.CourseAggregate.Model;
 
 namespace Library.Test
 {
@@ -31,14 +31,14 @@ namespace Library.Test
         public void Cannot_create_video_name_less_five_characters()
         {
             Action action = () => new Video("Java", "https://www.youtube.com/watch?v=rUTKomc2gG8");
-            action.Should().Throw<InvalidOperationException>();
+            action.Should().Throw<ArgumentException>();
         }
 
         [Fact]
         public void Cannot_create_video_url_empty()
         {
             Action action = () => new Video("O que o JavaScript é capaz de fazer?", "");
-            action.Should().Throw<InvalidOperationException>();
+            action.Should().Throw<ArgumentException>();
         }
     }
 }

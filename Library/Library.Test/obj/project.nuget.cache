@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "8M+P/weql92r2q3EthRoh9spHOl8vWx4qX9JciC3Re0y0l+NLIuTaW5jWlHfkOKEyx1qiqXQ9QPZNihSQJjFJg==",
+  "dgSpecHash": "/Fj+uCy1mAzH9PjFLDGFPNMJX7tkYb9b2HRl/Oh49Q6ZNPHzRm6mzpdauvVhwIFI6Rp5cbi/Bp0lAu5674XIHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Test\\Library.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\dawn.guard\\1.12.0\\dawn.guard.1.12.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

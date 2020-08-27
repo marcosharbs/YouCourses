@@ -36,6 +36,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Dawn.Guard": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

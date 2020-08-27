@@ -1,6 +1,6 @@
-using System;
 using System.Collections.Generic;
 using Library.Domain.Common;
+using Dawn;
 
 namespace Library.Domain.CourseAggregate.Model 
 {
@@ -11,17 +11,8 @@ namespace Library.Domain.CourseAggregate.Model
 
         public Video(string name, string url)
         {
-            if(string.IsNullOrEmpty(name))
-                throw new InvalidOperationException();
-
-            if(string.IsNullOrEmpty(url))
-                throw new InvalidOperationException();
-
-            if(name.Length < 5)
-                throw new InvalidOperationException();
-
-            Url = url;
-            Name = name;
+            Url = Guard.Argument(url, nameof(url)).NotNull().NotEmpty();
+            Name = Guard.Argument(name, nameof(name)).NotNull().NotEmpty().MinLength(5);
         }
 
         protected override IEnumerable<object> GetEqualityComponents()

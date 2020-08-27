@@ -1,0 +1,9 @@
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\bin\Debug\netstandard2.0\Library.Domain.deps.json
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\bin\Debug\netstandard2.0\Library.Domain.dll
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\bin\Debug\netstandard2.0\Library.Domain.pdb
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\obj\Debug\netstandard2.0\Library.Domain.csprojAssemblyReference.cache
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\obj\Debug\netstandard2.0\Library.Domain.AssemblyInfoInputs.cache
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\obj\Debug\netstandard2.0\Library.Domain.AssemblyInfo.cs
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\obj\Debug\netstandard2.0\Library.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\obj\Debug\netstandard2.0\Library.Domain.dll
+C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\obj\Debug\netstandard2.0\Library.Domain.pdb

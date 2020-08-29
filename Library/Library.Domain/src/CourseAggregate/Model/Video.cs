@@ -1,24 +1,34 @@
-using System.Collections.Generic;
+using System;
 using Library.Domain.Common;
-using Dawn;
 
 namespace Library.Domain.CourseAggregate.Model 
 {
-    public sealed class Video : ValueObject<Video>
+    public class Video : Entity
     {
-        public string Name { get; }
-        public string Url { get; }
+        public virtual VideoName VideoName { get; }
+        public virtual VideoUrl VideoUrl { get; }
 
-        public Video(string name, string url)
+        protected Video() {}
+
+        private Video(Guid id, VideoName videoName, VideoUrl videoUrl) : base(id)
         {
-            Url = Guard.Argument(url, nameof(url)).NotNull().NotEmpty();
-            Name = Guard.Argument(name, nameof(name)).NotNull().NotEmpty().MinLength(5);
+            VideoName = videoName;
+            VideoUrl = videoUrl;
         }
 
-        protected override IEnumerable<object> GetEqualityComponents()
+        public virtual bool HasSameUrl(Video otherVideo)
         {
-            yield return Name;
-            yield return Url;
+            return VideoUrl.Url.Equals(otherVideo.VideoUrl.Url);
+        }
+
+        public static Video Create(Guid id, string name, string url)
+        {
+            return new Video(id, new VideoName(name), new VideoUrl(url));
+        }
+
+        public static Video Create(string name, string url)
+        {
+            return new Video(Guid.NewGuid(), new VideoName(name), new VideoUrl(url));
         }
     }
 }

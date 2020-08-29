@@ -1,0 +1,67 @@
+using System.Collections.Generic;
+using System;
+using Dawn;
+using Library.Domain.Common;
+using Library.Domain.AuthorAggregate.Model;
+
+namespace Library.Domain.CourseAggregate.Model
+{
+    public class Course : AggregateRoot
+    {
+        public virtual CourseName CourseName { get; }
+        public virtual CourseDescription CourseDescription { get; }
+        public virtual Author Author { get; }
+        public virtual List<Video> Videos { get; }
+
+        public Course() {}
+
+        private Course(Guid id, 
+                       CourseName courseName, 
+                       CourseDescription courseDescription,
+                       Author author, 
+                       List<Video> videos) : base(id)
+        {
+            CourseName = courseName;
+            CourseDescription = courseDescription;
+            Author = Guard.Argument(author, nameof(author)).NotNull();
+            Videos = new List<Video>();
+            Guard.Argument(videos, nameof(videos)).NotNull();
+            videos.ForEach(video => AddVideo(video));
+        }
+
+        public virtual void AddVideo(Video newVideo)
+        {
+            if(Videos.Find(video => video.HasSameUrl(newVideo)) != null)
+                throw new InvalidOperationException();
+
+            Videos.Add(newVideo);
+        }
+
+        public static Course Create(Guid id, string name, string description, Author author, List<Video> videos)
+        {
+            return new Course(
+                id, 
+                new CourseName(name), 
+                new CourseDescription(description), 
+                author,
+                videos
+            );
+        }
+
+        public static Course Create(Guid id, string name, string description, Author author)
+        {
+            return Course.Create(id, name, description, author, new List<Video>());
+        }
+
+        public static Course Create(string name, string description, Author author, List<Video> videos)
+        {
+            return Course.Create(Guid.NewGuid(), name, description, author, videos);
+        }
+
+        public static Course Create(string name, string description, Author author)
+        {
+            return Course.Create(name, description, author, new List<Video>());
+        }
+
+    }
+}

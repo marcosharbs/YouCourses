@@ -7,6 +7,8 @@ namespace Library.Domain.Common
     {
         protected abstract IEnumerable<object> GetEqualityComponents();
 
+        protected ValueObject() {}
+
         public override bool Equals(object obj)
         {
             var valueObject = obj as T;

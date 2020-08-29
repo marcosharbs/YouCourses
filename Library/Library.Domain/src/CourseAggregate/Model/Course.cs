@@ -3,6 +3,7 @@ using System;
 using Dawn;
 using Library.Domain.Common;
 using Library.Domain.AuthorAggregate.Model;
+using System.Linq;
 
 namespace Library.Domain.CourseAggregate.Model
 {
@@ -11,7 +12,14 @@ namespace Library.Domain.CourseAggregate.Model
         public virtual CourseName CourseName { get; }
         public virtual CourseDescription CourseDescription { get; }
         public virtual Author Author { get; }
-        public virtual List<Video> Videos { get; }
+        protected virtual IList<Video> _videos { get; set; }
+        public virtual IEnumerable<Video> Videos
+        {
+            get
+            {
+                return _videos.AsEnumerable();
+            }
+        }
 
         public Course() {}
 
@@ -24,17 +32,22 @@ namespace Library.Domain.CourseAggregate.Model
             CourseName = courseName;
             CourseDescription = courseDescription;
             Author = Guard.Argument(author, nameof(author)).NotNull();
-            Videos = new List<Video>();
+            _videos = new List<Video>();
             Guard.Argument(videos, nameof(videos)).NotNull();
             videos.ForEach(video => AddVideo(video));
         }
 
         public virtual void AddVideo(Video newVideo)
         {
-            if(Videos.Find(video => video.HasSameUrl(newVideo)) != null)
+            if(_videos.FirstOrDefault(video => video.HasSameUrl(newVideo)) != null)
                 throw new InvalidOperationException();
 
-            Videos.Add(newVideo);
+            _videos.Add(newVideo);
+        }
+
+        public virtual void RemoveVideos()
+        {
+            _videos.Clear();
         }
 
         public static Course Create(Guid id, string name, string description, Author author, List<Video> videos)

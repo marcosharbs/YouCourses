@@ -32,7 +32,8 @@ namespace Library.Test.Data
                         m.FluentMappings.AddFromAssemblyOf<VideoMap>();
                         m.FluentMappings.AddFromAssemblyOf<CourseMap>();
                     })
-                    .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(updateExport, false))
+                    //.ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(updateExport, false))
+                    .ExposeConfiguration(cfg => new SchemaExport(cfg).Execute(true, true, false))
                     .BuildSessionFactory();
             
         }

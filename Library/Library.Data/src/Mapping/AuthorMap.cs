@@ -7,7 +7,7 @@ namespace Library.Data.Mapping
     {
         public AuthorMap()
         {
-            Id(author => author.Id).GeneratedBy.Guid();
+            Id(author => author.Id).GeneratedBy.Assigned();
 
             Component(author => author.AuthorName, author => {
                 author.Map(authorName => authorName.Name).Length(255);

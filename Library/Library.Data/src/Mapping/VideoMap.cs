@@ -7,7 +7,7 @@ namespace Library.Data.Mapping
     {
         public VideoMap()
         {
-            Id(video => video.Id).GeneratedBy.Guid();
+            Id(video => video.Id).GeneratedBy.Assigned();
 
             Component(video => video.VideoName, video => {
                 video.Map(videoName => videoName.Name).Length(255);

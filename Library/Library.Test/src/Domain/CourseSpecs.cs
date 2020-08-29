@@ -3,6 +3,7 @@ using Xunit;
 using FluentAssertions;
 using Library.Domain.CourseAggregate.Model;
 using Library.Domain.AuthorAggregate.Model;
+using System.Linq;
 
 namespace Library.Test.Domain
 {
@@ -104,11 +105,11 @@ namespace Library.Test.Domain
             course.AddVideo(video4);
             course.AddVideo(video5);
 
-            course.Videos[0].Should().Be(video1);
-            course.Videos[1].Should().Be(video2);
-            course.Videos[2].Should().Be(video3);
-            course.Videos[3].Should().Be(video4);
-            course.Videos[4].Should().Be(video5);
+            course.Videos.ElementAt(0).Should().Be(video1);
+            course.Videos.ElementAt(1).Should().Be(video2);
+            course.Videos.ElementAt(2).Should().Be(video3);
+            course.Videos.ElementAt(3).Should().Be(video4);
+            course.Videos.ElementAt(4).Should().Be(video5);
         }
 
         [Fact]

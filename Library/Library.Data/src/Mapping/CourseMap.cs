@@ -1,4 +1,5 @@
 using FluentNHibernate.Mapping;
+using FluentNHibernate;
 using Library.Domain.CourseAggregate.Model;
 
 namespace Library.Data.Mapping
@@ -7,7 +8,7 @@ namespace Library.Data.Mapping
     {
         public CourseMap()
         {
-            Id(course => course.Id).GeneratedBy.Guid();
+            Id(course => course.Id).GeneratedBy.Assigned();
 
             Component(course => course.CourseName, course => {
                 course.Map(courseName => courseName.Name).Length(255);
@@ -19,7 +20,7 @@ namespace Library.Data.Mapping
 
             References(course => course.Author);
 
-            HasMany(course => course.Videos).Cascade.All();
+            HasMany<Video>(Reveal.Member<Course>("_videos")).Cascade.AllDeleteOrphan();
         }
     }
 }

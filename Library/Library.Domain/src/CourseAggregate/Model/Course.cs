@@ -9,8 +9,8 @@ namespace Library.Domain.CourseAggregate.Model
 {
     public class Course : AggregateRoot
     {
-        public virtual CourseName CourseName { get; }
-        public virtual CourseDescription CourseDescription { get; }
+        public virtual CourseName CourseName { get; protected set; }
+        public virtual CourseDescription CourseDescription { get; protected set; }
         public virtual Author Author { get; }
         protected virtual IList<Video> _videos { get; set; }
         public virtual IEnumerable<Video> Videos
@@ -21,7 +21,7 @@ namespace Library.Domain.CourseAggregate.Model
             }
         }
 
-        public Course() {}
+        protected Course() {}
 
         private Course(Guid id, 
                        CourseName courseName, 
@@ -35,6 +35,16 @@ namespace Library.Domain.CourseAggregate.Model
             _videos = new List<Video>();
             Guard.Argument(videos, nameof(videos)).NotNull();
             videos.ForEach(video => AddVideo(video));
+        }
+
+        public virtual void UpdateName(string name)
+        {
+            CourseName = new CourseName(name);
+        }
+
+        public virtual void UpdateDescription(string description)
+        {
+            CourseDescription = new CourseDescription(description);
         }
 
         public virtual void AddVideo(Video newVideo)

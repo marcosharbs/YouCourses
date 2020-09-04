@@ -90,6 +90,22 @@ namespace Library.Test.Domain
         }
 
         [Fact]
+        public void After_update_course_name_should_return_correct_name()
+        {
+            var course = Course.Create("Curso de JS", "Curso para pessoas que querem estudar JS", author);
+            course.UpdateName("Novo curso de JS");
+            course.CourseName.Name.Should().Be("Novo curso de JS");
+        }
+
+        [Fact]
+        public void After_update_course_description_should_return_correct_description()
+        {
+            var course = Course.Create("Curso de JS", "Curso para pessoas que querem estudar JS", author);
+            course.UpdateDescription("Curso para pessoas que querem estudar JS atualizado");
+            course.CourseDescription.Description.Should().Be("Curso para pessoas que querem estudar JS atualizado");
+        }
+
+        [Fact]
         public void After_add_videos_must_return_same_videos()
         {
             var video1 = Video.Create("curso_1", "http://curso1.com");

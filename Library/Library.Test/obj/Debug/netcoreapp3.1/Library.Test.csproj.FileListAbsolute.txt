@@ -118,3 +118,7 @@ c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\De
 c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Library.Application.dll
+c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Library.Application.pdb
+c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+c:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Test\bin\Debug\netcoreapp3.1\Moq.dll

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1VXYfFI3yDI9N4/VBSqzvgjIpv8CtLeBkEBpm6I+diNssoSNeZkftb9y2TBzBaYINJM6eLfnrlspz8oSrdSQCQ==",
+  "dgSpecHash": "aPkqswwMjB1tHN+qYxoSAksLsSN34s0Rcxjptgmgd6Je9VQPE5qhEq5ttfpqSx7pNx8WquJLnEC8BcgEx37m5A==",
   "success": true,
   "projectFilePath": "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Test\\Library.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\coverlet.msbuild\\2.9.0\\coverlet.msbuild.2.9.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\dawn.guard\\1.12.0\\dawn.guard.1.12.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\fluentnhibernate\\2.1.2\\fluentnhibernate.2.1.2.nupkg.sha512",

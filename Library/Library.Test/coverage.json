@@ -1,0 +1,1221 @@
+{
+  "Library.Application.dll": {
+    "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Application\\src\\GetCoursesUseCase.cs": {
+      "Library.Application.GetCoursesUseCase": {
+        "System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Application.GetCoursesUseCase::Action()": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        },
+        "System.Void Library.Application.GetCoursesUseCase::.ctor(Library.Domain.Common.IUnitOfWork)": {
+          "Lines": {
+            "10": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Application\\src\\SaveCourseUseCase.cs": {
+      "Library.Application.SaveCourseUseCase": {
+        "Library.Domain.CourseAggregate.Model.Course Library.Application.SaveCourseUseCase::Action()": {
+          "Lines": {
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        },
+        "System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.Common.IUnitOfWork)": {
+          "Lines": {
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Application\\src\\UpdateCourseUseCase.cs": {
+      "Library.Application.UpdateCourseUseCase": {
+        "Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "20": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 81,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 81,
+              "EndOffset": 83,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.Common.IUnitOfWork)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Application\\src\\UseCase.cs": {
+      "Library.Application.UseCase`1": {
+        "T Library.Application.UseCase`1::Execute()": {
+          "Lines": {
+            "16": 2,
+            "19": 2,
+            "20": 2,
+            "21": 2,
+            "22": 2,
+            "23": 2,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 2,
+            "30": 2
+          },
+          "Branches": []
+        },
+        "System.Void Library.Application.UseCase`1::.ctor(Library.Domain.Common.IUnitOfWork)": {
+          "Lines": {
+            "10": 2,
+            "11": 2,
+            "12": 2,
+            "13": 2
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Library.Data.dll": {
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\Config.cs": {
+      "Library.Data.Config": {
+        "Microsoft.Extensions.Configuration.IConfiguration Library.Data.Config::InitConfiguration()": {
+          "Lines": {
+            "9": 2,
+            "10": 2,
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\NHibernateUnitOfWork.cs": {
+      "Library.Data.NHibernateUnitOfWork": {
+        "NHibernate.ISessionFactory Library.Data.NHibernateUnitOfWork::get_SessionFactory()": {
+          "Lines": {
+            "19": 6,
+            "20": 6,
+            "21": 2,
+            "22": 2,
+            "24": 2,
+            "25": 2,
+            "26": 4,
+            "27": 4,
+            "28": 4,
+            "29": 4,
+            "30": 4,
+            "31": 4,
+            "32": 2,
+            "33": 2,
+            "34": 6,
+            "35": 6
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 20,
+              "Offset": 12,
+              "EndOffset": 112,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 6
+            }
+          ]
+        },
+        "Library.Domain.Common.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()": {
+          "Lines": {
+            "41": 6,
+            "42": 6,
+            "43": 6
+          },
+          "Branches": []
+        },
+        "Library.Domain.Common.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()": {
+          "Lines": {
+            "49": 3,
+            "50": 3,
+            "51": 3
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()": {
+          "Lines": {
+            "55": 6,
+            "56": 6,
+            "57": 6,
+            "58": 6
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()": {
+          "Lines": {
+            "61": 6,
+            "62": 6,
+            "63": 6,
+            "64": 6
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()": {
+          "Lines": {
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\Repository\\AuthorRepository.cs": {
+      "Library.Data.Repository.AuthorRepository": {
+        "System.Void Library.Data.Repository.AuthorRepository::AddOrUpdate(Library.Domain.AuthorAggregate.Model.Author)": {
+          "Lines": {
+            "19": 3,
+            "20": 3,
+            "21": 3
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.Repository.AuthorRepository::GetAll()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        },
+        "Library.Domain.AuthorAggregate.Model.Author Library.Data.Repository.AuthorRepository::GetById(System.Guid)": {
+          "Lines": {
+            "29": 2,
+            "30": 2,
+            "31": 2
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.Repository.AuthorRepository::Remove(Library.Domain.AuthorAggregate.Model.Author)": {
+          "Lines": {
+            "34": 2,
+            "35": 2,
+            "36": 2
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.Repository.AuthorRepository::.ctor(NHibernate.ISession)": {
+          "Lines": {
+            "13": 6,
+            "14": 6,
+            "15": 6,
+            "16": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\Repository\\CourseRepository.cs": {
+      "Library.Data.Repository.CourseRepository": {
+        "System.Void Library.Data.Repository.CourseRepository::AddOrUpdate(Library.Domain.CourseAggregate.Model.Course)": {
+          "Lines": {
+            "19": 2,
+            "20": 2,
+            "21": 2
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.Repository.CourseRepository::GetAll()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Course Library.Data.Repository.CourseRepository::GetById(System.Guid)": {
+          "Lines": {
+            "29": 3,
+            "30": 3,
+            "31": 3
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.Repository.CourseRepository::Remove(Library.Domain.CourseAggregate.Model.Course)": {
+          "Lines": {
+            "34": 1,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": []
+        },
+        "System.Void Library.Data.Repository.CourseRepository::.ctor(NHibernate.ISession)": {
+          "Lines": {
+            "13": 3,
+            "14": 3,
+            "15": 3,
+            "16": 3
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\Mapping\\AuthorMap.cs": {
+      "Library.Data.Mapping.AuthorMap": {
+        "System.Void Library.Data.Mapping.AuthorMap::.ctor()": {
+          "Lines": {
+            "8": 9,
+            "9": 9,
+            "10": 9,
+            "12": 18,
+            "13": 18,
+            "14": 18,
+            "16": 18,
+            "17": 18,
+            "18": 18,
+            "19": 9
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\Mapping\\CourseMap.cs": {
+      "Library.Data.Mapping.CourseMap": {
+        "System.Void Library.Data.Mapping.CourseMap::.ctor()": {
+          "Lines": {
+            "9": 9,
+            "10": 9,
+            "11": 9,
+            "13": 18,
+            "14": 18,
+            "15": 18,
+            "17": 18,
+            "18": 18,
+            "19": 18,
+            "21": 9,
+            "23": 9,
+            "24": 9
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Data\\src\\Mapping\\VideoMap.cs": {
+      "Library.Data.Mapping.VideoMap": {
+        "System.Void Library.Data.Mapping.VideoMap::.ctor()": {
+          "Lines": {
+            "8": 9,
+            "9": 9,
+            "10": 9,
+            "12": 18,
+            "13": 18,
+            "14": 18,
+            "16": 18,
+            "17": 18,
+            "18": 18,
+            "19": 9
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Library.Domain.dll": {
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\CourseAggregate\\Model\\Course.cs": {
+      "Library.Domain.CourseAggregate.Model.Course": {
+        "Library.Domain.CourseAggregate.Model.CourseName Library.Domain.CourseAggregate.Model.Course::get_CourseName()": {
+          "Lines": {
+            "12": 26
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.CourseDescription Library.Domain.CourseAggregate.Model.Course::get_CourseDescription()": {
+          "Lines": {
+            "13": 24
+          },
+          "Branches": []
+        },
+        "Library.Domain.AuthorAggregate.Model.Author Library.Domain.CourseAggregate.Model.Course::get_Author()": {
+          "Lines": {
+            "14": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get__videos()": {
+          "Lines": {
+            "15": 62
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get_Videos()": {
+          "Lines": {
+            "19": 9,
+            "20": 9,
+            "21": 9
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::UpdateName(System.String)": {
+          "Lines": {
+            "41": 1,
+            "42": 1,
+            "43": 1
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::UpdateDescription(System.String)": {
+          "Lines": {
+            "46": 1,
+            "47": 1,
+            "48": 1
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::AddVideo(Library.Domain.CourseAggregate.Model.Video)": {
+          "Lines": {
+            "51": 13,
+            "52": 34,
+            "53": 1,
+            "55": 12,
+            "56": 12
+          },
+          "Branches": [
+            {
+              "Line": 52,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 52,
+              "Offset": 45,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 12
+            }
+          ]
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::RemoveVideos()": {
+          "Lines": {
+            "59": 1,
+            "60": 1,
+            "61": 1
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)": {
+          "Lines": {
+            "64": 20,
+            "65": 20,
+            "66": 20,
+            "67": 20,
+            "68": 20,
+            "69": 20,
+            "70": 20,
+            "71": 20,
+            "72": 13
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author)": {
+          "Lines": {
+            "75": 4,
+            "76": 4,
+            "77": 3
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)": {
+          "Lines": {
+            "80": 16,
+            "81": 16,
+            "82": 10
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.String,System.String,Library.Domain.AuthorAggregate.Model.Author)": {
+          "Lines": {
+            "85": 15,
+            "86": 15,
+            "87": 10
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::<.ctor>b__18_0(Library.Domain.CourseAggregate.Model.Video)": {
+          "Lines": {
+            "37": 0
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::.ctor()": {
+          "Lines": {
+            "24": 3
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Course::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.CourseName,Library.Domain.CourseAggregate.Model.CourseDescription,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)": {
+          "Lines": {
+            "30": 16,
+            "31": 15,
+            "32": 15,
+            "33": 15,
+            "34": 15,
+            "35": 14,
+            "36": 14,
+            "38": 13
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\CourseAggregate\\Model\\CourseDescription.cs": {
+      "Library.Domain.CourseAggregate.Model.CourseDescription": {
+        "System.String Library.Domain.CourseAggregate.Model.CourseDescription::get_Description()": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor()": {
+          "Lines": {
+            "11": 12
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor(System.String)": {
+          "Lines": {
+            "13": 20,
+            "14": 20,
+            "15": 20,
+            "16": 20,
+            "17": 20,
+            "18": 20,
+            "19": 20,
+            "20": 17
+          },
+          "Branches": []
+        }
+      },
+      "Library.Domain.CourseAggregate.Model.CourseDescription/<GetEqualityComponents>d__5": {
+        "System.Boolean Library.Domain.CourseAggregate.Model.CourseDescription/<GetEqualityComponents>d__5::MoveNext()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\CourseAggregate\\Model\\CourseName.cs": {
+      "Library.Domain.CourseAggregate.Model.CourseName": {
+        "System.String Library.Domain.CourseAggregate.Model.CourseName::get_Name()": {
+          "Lines": {
+            "9": 3
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor()": {
+          "Lines": {
+            "11": 12
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor(System.String)": {
+          "Lines": {
+            "13": 21,
+            "14": 21,
+            "15": 21,
+            "16": 21,
+            "17": 21,
+            "18": 21,
+            "19": 20
+          },
+          "Branches": []
+        }
+      },
+      "Library.Domain.CourseAggregate.Model.CourseName/<GetEqualityComponents>d__5": {
+        "System.Boolean Library.Domain.CourseAggregate.Model.CourseName/<GetEqualityComponents>d__5::MoveNext()": {
+          "Lines": {
+            "22": 2,
+            "23": 2,
+            "24": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\CourseAggregate\\Model\\Video.cs": {
+      "Library.Domain.CourseAggregate.Model.Video": {
+        "Library.Domain.CourseAggregate.Model.VideoName Library.Domain.CourseAggregate.Model.Video::get_VideoName()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.VideoUrl Library.Domain.CourseAggregate.Model.Video::get_VideoUrl()": {
+          "Lines": {
+            "9": 42
+          },
+          "Branches": []
+        },
+        "System.Boolean Library.Domain.CourseAggregate.Model.Video::HasSameUrl(Library.Domain.CourseAggregate.Model.Video)": {
+          "Lines": {
+            "20": 21,
+            "21": 21,
+            "22": 21
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Video Library.Domain.CourseAggregate.Model.Video::Create(System.Guid,System.String,System.String)": {
+          "Lines": {
+            "25": 2,
+            "26": 2,
+            "27": 2
+          },
+          "Branches": []
+        },
+        "Library.Domain.CourseAggregate.Model.Video Library.Domain.CourseAggregate.Model.Video::Create(System.String,System.String)": {
+          "Lines": {
+            "30": 17,
+            "31": 17,
+            "32": 15
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Video::.ctor()": {
+          "Lines": {
+            "11": 6
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.Video::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.VideoName,Library.Domain.CourseAggregate.Model.VideoUrl)": {
+          "Lines": {
+            "13": 17,
+            "14": 17,
+            "15": 17,
+            "16": 17,
+            "17": 17
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\CourseAggregate\\Model\\VideoName.cs": {
+      "Library.Domain.CourseAggregate.Model.VideoName": {
+        "System.String Library.Domain.CourseAggregate.Model.VideoName::get_Name()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor()": {
+          "Lines": {
+            "11": 30
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor(System.String)": {
+          "Lines": {
+            "13": 19,
+            "14": 19,
+            "15": 19,
+            "16": 18
+          },
+          "Branches": []
+        }
+      },
+      "Library.Domain.CourseAggregate.Model.VideoName/<GetEqualityComponents>d__5": {
+        "System.Boolean Library.Domain.CourseAggregate.Model.VideoName/<GetEqualityComponents>d__5::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\CourseAggregate\\Model\\VideoUrl.cs": {
+      "Library.Domain.CourseAggregate.Model.VideoUrl": {
+        "System.String Library.Domain.CourseAggregate.Model.VideoUrl::get_Url()": {
+          "Lines": {
+            "9": 42
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor()": {
+          "Lines": {
+            "11": 30
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor(System.String)": {
+          "Lines": {
+            "13": 18,
+            "14": 18,
+            "15": 18,
+            "16": 17
+          },
+          "Branches": []
+        }
+      },
+      "Library.Domain.CourseAggregate.Model.VideoUrl/<GetEqualityComponents>d__5": {
+        "System.Boolean Library.Domain.CourseAggregate.Model.VideoUrl/<GetEqualityComponents>d__5::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\Common\\AggregateRoot.cs": {
+      "Library.Domain.Common.AggregateRoot": {
+        "System.Void Library.Domain.Common.AggregateRoot::.ctor(System.Guid)": {
+          "Lines": {
+            "8": 113
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.Common.AggregateRoot::.ctor()": {
+          "Lines": {
+            "10": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\Common\\Entity.cs": {
+      "Library.Domain.Common.Entity": {
+        "System.Guid Library.Domain.Common.Entity::get_Id()": {
+          "Lines": {
+            "7": 155
+          },
+          "Branches": []
+        },
+        "System.Boolean Library.Domain.Common.Entity::Equals(System.Object)": {
+          "Lines": {
+            "22": 14,
+            "23": 14,
+            "25": 14,
+            "26": 0,
+            "28": 14,
+            "29": 6,
+            "31": 8,
+            "32": 14
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 14,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 14
+            },
+            {
+              "Line": 28,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 6
+            },
+            {
+              "Line": 28,
+              "Offset": 26,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 8
+            }
+          ]
+        },
+        "System.Boolean Library.Domain.Common.Entity::op_Equality(Library.Domain.Common.Entity,Library.Domain.Common.Entity)": {
+          "Lines": {
+            "35": 13,
+            "36": 13,
+            "37": 12,
+            "39": 1,
+            "40": 1,
+            "42": 0,
+            "43": 13
+          },
+          "Branches": [
+            {
+              "Line": 36,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 12
+            },
+            {
+              "Line": 36,
+              "Offset": 2,
+              "EndOffset": 10,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 36,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 12
+            },
+            {
+              "Line": 36,
+              "Offset": 13,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 39,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 39,
+              "Offset": 20,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 39,
+              "Offset": 31,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Library.Domain.Common.Entity::op_Inequality(Library.Domain.Common.Entity,Library.Domain.Common.Entity)": {
+          "Lines": {
+            "46": 13,
+            "47": 13,
+            "48": 13
+          },
+          "Branches": []
+        },
+        "System.Int32 Library.Domain.Common.Entity::GetHashCode()": {
+          "Lines": {
+            "51": 12,
+            "52": 12,
+            "53": 12
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.Common.Entity::.ctor(System.Guid)": {
+          "Lines": {
+            "9": 56,
+            "10": 56,
+            "11": 56,
+            "12": 2,
+            "14": 54,
+            "15": 54
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 11,
+              "Offset": 21,
+              "EndOffset": 29,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 54
+            }
+          ]
+        },
+        "System.Void Library.Domain.Common.Entity::.ctor()": {
+          "Lines": {
+            "17": 4,
+            "18": 4,
+            "19": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\Common\\ValueObject.cs": {
+      "Library.Domain.Common.ValueObject`1": {
+        "System.Boolean Library.Domain.Common.ValueObject`1::Equals(System.Object)": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "16": 1,
+            "17": 0,
+            "19": 1,
+            "20": 1
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 24,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Boolean Library.Domain.Common.ValueObject`1::EqualsCore(Library.Domain.Common.ValueObject`1<T>)": {
+          "Lines": {
+            "23": 1,
+            "24": 1,
+            "25": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 Library.Domain.Common.ValueObject`1::GetHashCode()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 14,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 5,
+              "EndOffset": 7,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 30,
+              "Offset": 5,
+              "EndOffset": 10,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Library.Domain.Common.ValueObject`1::op_Equality(Library.Domain.Common.ValueObject`1<T>,Library.Domain.Common.ValueObject`1<T>)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 2,
+              "EndOffset": 4,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 2,
+              "EndOffset": 10,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 13,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 20,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 31,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean Library.Domain.Common.ValueObject`1::op_Inequality(Library.Domain.Common.ValueObject`1<T>,Library.Domain.Common.ValueObject`1<T>)": {
+          "Lines": {
+            "45": 0,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.Common.ValueObject`1::.ctor()": {
+          "Lines": {
+            "10": 489
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\AuthorAggregate\\Model\\Author.cs": {
+      "Library.Domain.AuthorAggregate.Model.Author": {
+        "Library.Domain.AuthorAggregate.Model.AuthorName Library.Domain.AuthorAggregate.Model.Author::get_AuthorName()": {
+          "Lines": {
+            "8": 2
+          },
+          "Branches": []
+        },
+        "Library.Domain.AuthorAggregate.Model.AuthorPicture Library.Domain.AuthorAggregate.Model.Author::get_AuthorPicture()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.Guid,System.String,System.String)": {
+          "Lines": {
+            "20": 24,
+            "21": 24,
+            "22": 22
+          },
+          "Branches": []
+        },
+        "Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.String,System.String)": {
+          "Lines": {
+            "25": 16,
+            "26": 16,
+            "27": 15
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor()": {
+          "Lines": {
+            "11": 3
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor(System.Guid,Library.Domain.AuthorAggregate.Model.AuthorName,Library.Domain.AuthorAggregate.Model.AuthorPicture)": {
+          "Lines": {
+            "13": 23,
+            "14": 22,
+            "15": 22,
+            "16": 22,
+            "17": 22
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\AuthorAggregate\\Model\\AuthorName.cs": {
+      "Library.Domain.AuthorAggregate.Model.AuthorName": {
+        "System.String Library.Domain.AuthorAggregate.Model.AuthorName::get_Name()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor()": {
+          "Lines": {
+            "11": 15
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor(System.String)": {
+          "Lines": {
+            "13": 24,
+            "14": 24,
+            "15": 24,
+            "16": 23
+          },
+          "Branches": []
+        }
+      },
+      "Library.Domain.AuthorAggregate.Model.AuthorName/<GetEqualityComponents>d__5": {
+        "System.Boolean Library.Domain.AuthorAggregate.Model.AuthorName/<GetEqualityComponents>d__5::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\marco\\Documents\\Projetos\\Pessoal\\YouCourses\\Library\\Library.Domain\\src\\AuthorAggregate\\Model\\AuthorPicture.cs": {
+      "Library.Domain.AuthorAggregate.Model.AuthorPicture": {
+        "System.String Library.Domain.AuthorAggregate.Model.AuthorPicture::get_ImageUrl()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor()": {
+          "Lines": {
+            "10": 15
+          },
+          "Branches": []
+        },
+        "System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor(System.String)": {
+          "Lines": {
+            "12": 23,
+            "13": 23,
+            "14": 23,
+            "15": 23
+          },
+          "Branches": []
+        }
+      },
+      "Library.Domain.AuthorAggregate.Model.AuthorPicture/<GetEqualityComponents>d__5": {
+        "System.Boolean Library.Domain.AuthorAggregate.Model.AuthorPicture/<GetEqualityComponents>d__5::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

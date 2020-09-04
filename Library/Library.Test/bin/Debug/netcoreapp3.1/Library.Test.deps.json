@@ -20,6 +20,7 @@
           "NHibernate": "5.3.2",
           "Npgsql": "4.1.4",
           "coverlet.collector": "1.2.0",
+          "coverlet.msbuild": "2.9.0",
           "xunit": "2.4.0",
           "xunit.runner.visualstudio": "2.4.0"
         },
@@ -59,6 +60,7 @@
         }
       },
       "coverlet.collector/1.2.0": {},
+      "coverlet.msbuild/2.9.0": {},
       "Dawn.Guard/1.12.0": {
         "runtime": {
           "lib/netstandard2.0/Dawn.Guard.dll": {
@@ -1507,6 +1509,13 @@
       "sha512": "sha512-ZB+EGXsVBIn8cew7D3S2c+rgIlokKv1dSwsXEoiFQaNXF/BSxp9Rlfz/jV1ehSWH5XpLitfRxFNW3ok7uPDOXA==",
       "path": "coverlet.collector/1.2.0",
       "hashPath": "coverlet.collector.1.2.0.nupkg.sha512"
+    },
+    "coverlet.msbuild/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t+2du2q+z0FFklyP6HGSoKssRj0NequInLvgQ9rtxHskbgmAENxgt83eTQSRyxJ8DAThW8WOYhOuhuXIs//ZyA==",
+      "path": "coverlet.msbuild/2.9.0",
+      "hashPath": "coverlet.msbuild.2.9.0.nupkg.sha512"
     },
     "Dawn.Guard/1.12.0": {
       "type": "package",

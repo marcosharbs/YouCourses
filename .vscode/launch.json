@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Library/Library.Test/bin/Debug/netcoreapp3.1/Library.Test.dll",
+            "program": "${workspaceFolder}/Library/Library.RestApi/bin/Debug/netcoreapp3.1/Library.RestApi.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Library/Library.Test",
+            "cwd": "${workspaceFolder}/Library/Library.RestApi",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

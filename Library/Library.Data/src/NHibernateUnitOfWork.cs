@@ -1,7 +1,4 @@
 using NHibernate;
-using FluentNHibernate.Cfg;
-using Library.Data.Mapping;
-using FluentNHibernate.Cfg.Db;
 using Library.Domain.Common;
 using Library.Domain.AuthorAggregate.Model;
 using Library.Domain.CourseAggregate.Model;
@@ -14,25 +11,10 @@ namespace Library.Data
         private ISessionFactory _sessionFactory;
         private ISession _session;
         private ITransaction _transaction;
-        private ISessionFactory SessionFactory {
-            get
-            {
-                if(_sessionFactory == null)
-                {
-                    var appsettings = Config.InitConfiguration();
 
-                    _sessionFactory = Fluently.Configure()
-                                                .Database(PostgreSQLConfiguration.PostgreSQL82
-                                                .ConnectionString(c => c.Is(appsettings.GetSection("Database")["ConnectionSrtring"])))
-                                                .Mappings(m => {
-                                                    m.FluentMappings.AddFromAssemblyOf<AuthorMap>();
-                                                    m.FluentMappings.AddFromAssemblyOf<VideoMap>();
-                                                    m.FluentMappings.AddFromAssemblyOf<CourseMap>();
-                                                })
-                                                .BuildSessionFactory();
-                }
-                return _sessionFactory;
-            }
+        public NHibernateUnitOfWork(ISessionFactory sessionFactory)
+        {
+            _sessionFactory = sessionFactory;
         }
 
         public IRepository<Author> Authors
@@ -53,7 +35,7 @@ namespace Library.Data
 
         public void BeginUnit()
         {
-            _session = SessionFactory.OpenSession();
+            _session = _sessionFactory.OpenSession();
             _transaction = _session.BeginTransaction();
         }
 
@@ -65,8 +47,11 @@ namespace Library.Data
 
         public void RollbackUnit()
         {
-            _transaction.Rollback();
-            _session.Close();
+            if(_transaction != null)
+                 _transaction.Rollback();
+
+            if(_session != null)
+                _session.Close();
         }
     }
 }

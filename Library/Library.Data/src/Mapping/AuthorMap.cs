@@ -11,11 +11,11 @@ namespace Library.Data.Mapping
 
             Component(author => author.AuthorName, author => {
                 author.Map(authorName => authorName.Name).Length(255);
-            });
+            }).Not.LazyLoad();
 
             Component(author => author.AuthorPicture, author => {
                 author.Map(authorPicture => authorPicture.ImageUrl).Length(400);
-            });
+            }).Not.LazyLoad();
         }
     }
 }

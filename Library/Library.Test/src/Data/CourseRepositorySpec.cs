@@ -12,7 +12,9 @@ namespace Library.Data.Repository
         [Fact]
         public void Valid_course_crud()
         {
-            var unitOfWork = new NHibernateUnitOfWork();
+            var appsettings = Config.InitConfiguration();
+
+            var unitOfWork = new NHibernateUnitOfWork(SessionHelper.GetSessionFactory(appsettings.GetSection("Database")["ConnectionSrtring"]));
 
             var authorId = Guid.NewGuid();
             var courseId = Guid.NewGuid();

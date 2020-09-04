@@ -11,7 +11,9 @@ namespace Library.Test.Data
         [Fact]
         public void Valid_author_crud()
         {
-            var unitOfWork = new NHibernateUnitOfWork();
+           var appsettings = Config.InitConfiguration();
+
+            var unitOfWork = new NHibernateUnitOfWork(SessionHelper.GetSessionFactory(appsettings.GetSection("Database")["ConnectionSrtring"]));
 
             unitOfWork.BeginUnit();
             

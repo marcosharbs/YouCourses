@@ -6,12 +6,15 @@ namespace Library.Application
 {
     public class GetCoursesUseCase : UseCase<ICollection<Course>>
     {
+        private int _page;
 
-        public GetCoursesUseCase(IUnitOfWork unitOfWork) : base(unitOfWork) {}
+        public GetCoursesUseCase(int page, IUnitOfWork unitOfWork) : base(unitOfWork) {
+            _page = page;
+        }
 
         protected override ICollection<Course> Action()
         {
-            return _unitOfWork.Courses.GetAll();
+            return _unitOfWork.Courses.GetPartial(_page, 20);
         }
     }
 }

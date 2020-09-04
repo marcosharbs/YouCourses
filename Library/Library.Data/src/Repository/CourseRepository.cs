@@ -20,6 +20,11 @@ namespace Library.Data.Repository
             _session.SaveOrUpdate(entity);
         }
 
+        public int Count()
+        {
+            return _session.QueryOver<Course>().RowCount();
+        }
+
         public ICollection<Course> GetAll()
         {
             return _session.CreateCriteria(typeof(Course)).List<Course>();
@@ -28,6 +33,14 @@ namespace Library.Data.Repository
         public Course GetById(Guid id)
         {
             return _session.Get<Course>(id);
+        }
+
+        public ICollection<Course> GetPartial(int page, int pageSize)
+        {
+            return _session.CreateCriteria(typeof(Course))
+                            .SetFirstResult(page * pageSize)
+                            .SetMaxResults(pageSize)
+                            .List<Course>();
         }
 
         public void Remove(Course entity)

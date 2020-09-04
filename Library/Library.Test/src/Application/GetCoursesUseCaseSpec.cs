@@ -28,7 +28,7 @@ namespace Library.Test.Data
             var mockUnitOfWork = new Mock<IUnitOfWork>();
             mockUnitOfWork.SetupGet(mock => mock.Courses).Returns(mockCoursesRepository.Object);
 
-            var useCase = new GetCoursesUseCase(mockUnitOfWork.Object);
+            var useCase = new GetCoursesUseCase(0, mockUnitOfWork.Object);
             var courses = useCase.Execute();
 
             mockUnitOfWork.Verify(mock => mock.BeginUnit(), Times.Exactly(1));

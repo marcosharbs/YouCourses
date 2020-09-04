@@ -20,6 +20,11 @@ namespace Library.Data.Repository
             _session.SaveOrUpdate(entity);
         }
 
+        public int Count()
+        {
+            return _session.QueryOver<Author>().RowCount();
+        }
+
         public ICollection<Author> GetAll()
         {
             return _session.CreateCriteria(typeof(Author)).List<Author>();
@@ -28,6 +33,14 @@ namespace Library.Data.Repository
         public Author GetById(Guid id)
         {
             return _session.Get<Author>(id);
+        }
+
+        public ICollection<Author> GetPartial(int page, int pageSize)
+        {
+            return _session.CreateCriteria(typeof(Author))
+                            .SetFirstResult(page * pageSize)
+                            .SetMaxResults(pageSize)
+                            .List<Author>();
         }
 
         public void Remove(Author entity)

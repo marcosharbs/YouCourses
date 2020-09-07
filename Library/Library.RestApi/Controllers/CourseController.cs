@@ -21,7 +21,7 @@ namespace Library.RestApi.Controllers
         {
             var totalCourses = new GetTotalCoursesUseCase(_unitOfWork).Execute();
             var courses = new GetCoursesUseCase(page, pageSize, _unitOfWork).Execute();
-            return Library.RestApi.Model.PaginatedData<CourseApi>.Create(totalCourses, page, pageSize, CourseApi.FromDomain(courses));
+            return PaginatedData<CourseApi>.Create(totalCourses, page, pageSize, CourseApi.FromDomain(courses));
         }
 
         [HttpPost]

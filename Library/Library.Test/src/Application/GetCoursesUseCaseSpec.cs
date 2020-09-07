@@ -23,18 +23,18 @@ namespace Library.Test.Data
             coursesList.Add(Course.Create("Curso 03", "Uma descrição que passe para o curso 03", author));
 
             var mockCoursesRepository = new Mock<ICourseRepository>();
-            mockCoursesRepository.Setup(mock => mock.GetAll()).Returns(coursesList);
+            mockCoursesRepository.Setup(mock => mock.GetPartial(0, 20)).Returns(coursesList);
 
             var mockUnitOfWork = new Mock<IUnitOfWork>();
             mockUnitOfWork.SetupGet(mock => mock.Courses).Returns(mockCoursesRepository.Object);
 
-            var useCase = new GetCoursesUseCase(0, mockUnitOfWork.Object);
+            var useCase = new GetCoursesUseCase(0, 20, mockUnitOfWork.Object);
             var courses = useCase.Execute();
 
             mockUnitOfWork.Verify(mock => mock.BeginUnit(), Times.Exactly(1));
             mockUnitOfWork.Verify(mock => mock.CommitUnit(), Times.Exactly(1));
             mockUnitOfWork.Verify(mock => mock.RollbackUnit(), Times.Never());
-            mockCoursesRepository.Verify(mock => mock.GetAll(), Times.Exactly(1));
+            mockCoursesRepository.Verify(mock => mock.GetPartial(0, 20), Times.Exactly(1));
             courses.Should().BeEquivalentTo(coursesList);
         }
     }

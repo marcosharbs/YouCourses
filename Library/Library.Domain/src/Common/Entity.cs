@@ -9,9 +9,12 @@ namespace Library.Domain.Common
         public Entity(Guid id)
         {
             if(id == null || id == Guid.Empty)
-                throw new ArgumentException();
-
-            Id = id;
+            {
+                Id = Guid.NewGuid();
+            }
+            else {
+                Id = id;
+            }
         }
 
         public Entity()

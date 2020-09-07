@@ -30,13 +30,6 @@ namespace Library.Test.Domain
         }
 
         [Fact]
-        public void Cannot_create_author_id_empty()
-        {
-            Action action = () => Author.Create(Guid.Empty, "Marcos Harbs", "http://marcosharbs.com");
-            action.Should().Throw<ArgumentException>();
-        }
-
-        [Fact]
         public void Cannot_create_author_name_empty()
         {
             Action action = () => Author.Create("", "");

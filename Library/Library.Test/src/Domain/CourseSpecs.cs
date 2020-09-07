@@ -34,13 +34,6 @@ namespace Library.Test.Domain
         }
 
         [Fact]
-        public void Cannot_create_course_id_empty()
-        {
-            Action action = () => Course.Create(Guid.Empty, "Curso de JS", "Curso para pessoas que querem estudar JS", author);
-            action.Should().Throw<ArgumentException>();
-        }
-
-        [Fact]
         public void Cannot_create_course_name_empty()
         {
             Action action = () => Course.Create("", "Curso para pessoas que querem estudar JS", author);

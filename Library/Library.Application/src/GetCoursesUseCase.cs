@@ -8,13 +8,16 @@ namespace Library.Application
     {
         private int _page;
 
-        public GetCoursesUseCase(int page, IUnitOfWork unitOfWork) : base(unitOfWork) {
+        private int _pageSize;
+
+        public GetCoursesUseCase(int page, int pageSize, IUnitOfWork unitOfWork) : base(unitOfWork) {
             _page = page;
+            _pageSize = pageSize;
         }
 
         protected override ICollection<Course> Action()
         {
-            return _unitOfWork.Courses.GetPartial(_page, 20);
+            return _unitOfWork.Courses.GetPartial(_page, _pageSize);
         }
     }
 }

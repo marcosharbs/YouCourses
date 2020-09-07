@@ -18,12 +18,12 @@ namespace Library.RestApi.Model
             ImageUrl = imageUrl;
         }
 
-        public static AuthorApi From(Author author)
+        public static AuthorApi FromDomain(Author author)
         {
             return new AuthorApi(author.Id, author.AuthorName.Name, author.AuthorPicture.ImageUrl);
         }
 
-        public static Author To(AuthorApi author)
+        public static Author ToDomain(AuthorApi author)
         {
             return Author.Create(author.Id, author.Name, author.ImageUrl);
         }

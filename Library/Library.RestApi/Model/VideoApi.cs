@@ -19,35 +19,35 @@ namespace Library.RestApi.Model
             Url = url;
         }
 
-        public static VideoApi From(Video video)
+        public static VideoApi FromDomain(Video video)
         {
             return new VideoApi(video.Id, video.VideoName.Name, video.VideoUrl.Url);
         }
 
-        public static IEnumerable<VideoApi> From(IEnumerable<Video> videos)
+        public static IEnumerable<VideoApi> FromDomain(IEnumerable<Video> videos)
         {
             var list = new List<VideoApi>();
 
             foreach (var video in videos)
             {
-                list.Add(VideoApi.From(video));
+                list.Add(VideoApi.FromDomain(video));
             }
 
             return list;
         }
 
-        public static Video To(VideoApi video)
+        public static Video ToDomain(VideoApi video)
         {
             return Library.Domain.CourseAggregate.Model.Video.Create(video.Id, video.Name, video.Url);
         }
 
-        public static IEnumerable<Video> To(IEnumerable<VideoApi> videos)
+        public static IEnumerable<Video> ToDomain(IEnumerable<VideoApi> videos)
         {
             var list = new List<Video>();
 
             foreach (var video in videos)
             {
-                list.Add(VideoApi.To(video));
+                list.Add(VideoApi.ToDomain(video));
             }
 
             return list;

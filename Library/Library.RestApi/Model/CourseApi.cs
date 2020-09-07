@@ -24,36 +24,36 @@ namespace Library.RestApi.Model
             Videos = videos;
         }
 
-        public static CourseApi From(Course course)
+        public static CourseApi FromDomain(Course course)
         {
             return new CourseApi(
                 course.Id, 
                 course.CourseName.Name, 
                 course.CourseDescription.Description, 
-                AuthorApi.From(course.Author), 
-                VideoApi.From(course.Videos));
+                AuthorApi.FromDomain(course.Author), 
+                VideoApi.FromDomain(course.Videos));
         }
 
-        public static IEnumerable<CourseApi> From(IEnumerable<Course> courses)
+        public static IEnumerable<CourseApi> FromDomain(IEnumerable<Course> courses)
         {
             var list = new List<CourseApi>();
 
             foreach (var course in courses)
             {
-                list.Add(CourseApi.From(course));
+                list.Add(CourseApi.FromDomain(course));
             }
 
             return list;
         }
 
-        public static Course To(CourseApi course)
+        public static Course ToDomain(CourseApi course)
         {
             return Library.Domain.CourseAggregate.Model.Course.Create(
                 course.Id,
                 course.Name, 
                 course.Description, 
-                AuthorApi.To(course.Author),
-                VideoApi.To(course.Videos).ToList());
+                AuthorApi.ToDomain(course.Author),
+                VideoApi.ToDomain(course.Videos).ToList());
         }
     }
 }

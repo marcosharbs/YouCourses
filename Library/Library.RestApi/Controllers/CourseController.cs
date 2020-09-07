@@ -21,23 +21,23 @@ namespace Library.RestApi.Controllers
         {
             var totalCourses = new GetTotalCoursesUseCase(_unitOfWork).Execute();
             var courses = new GetCoursesUseCase(page, pageSize, _unitOfWork).Execute();
-            return Library.RestApi.Model.PaginatedData<CourseApi>.Create(totalCourses, page, pageSize, CourseApi.From(courses));
+            return Library.RestApi.Model.PaginatedData<CourseApi>.Create(totalCourses, page, pageSize, CourseApi.FromDomain(courses));
         }
 
         [HttpPost]
         public CourseApi Post(CourseApi courseApi)
         {
-            var course = CourseApi.To(courseApi);
+            var course = CourseApi.ToDomain(courseApi);
             var newCourse = new SaveCourseUseCase(course, _unitOfWork).Execute();
-            return CourseApi.From(newCourse);
+            return CourseApi.FromDomain(newCourse);
         }
 
         [HttpPut]
         public CourseApi Put(CourseApi courseApi)
         {
-            var course = CourseApi.To(courseApi);
+            var course = CourseApi.ToDomain(courseApi);
             var updatedCourse = new UpdateCourseUseCase(course, _unitOfWork).Execute();
-            return CourseApi.From(updatedCourse);
+            return CourseApi.FromDomain(updatedCourse);
         }
     }
 }

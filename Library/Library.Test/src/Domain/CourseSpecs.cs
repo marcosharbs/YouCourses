@@ -4,6 +4,7 @@ using FluentAssertions;
 using Library.Domain.CourseAggregate.Model;
 using Library.Domain.AuthorAggregate.Model;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Library.Test.Domain
 {
@@ -134,6 +135,32 @@ namespace Library.Test.Domain
             };
 
             action.Should().Throw<InvalidOperationException>();
+        }
+
+        [Fact]
+        public void Cannot_add_two_videos_same_url_using_constructor()
+        {
+            Action action = () => {
+                var videos = new List<Video>();
+                videos.Add(Video.Create("curso_1", "http://curso1.com"));
+                videos.Add(Video.Create("curso_2", "http://curso2.com"));
+                videos.Add(Video.Create("curso_3", "http://curso3.com"));
+                videos.Add(Video.Create("curso_4", "http://curso4.com"));
+                videos.Add(Video.Create("curso_5", "http://curso4.com"));
+
+                Course.Create( "Curso de JS", "Curso para pessoas que querem estudar JS", author, videos);
+            };
+
+            action.Should().Throw<InvalidOperationException>();
+        }
+
+        [Fact]
+        public void Two_course_description_equals_same_description()
+        {
+            var course1 = Course.Create("Curso de JS", "Curso para pessoas que querem estudar JS", author);
+            var course2 = Course.Create("Curso de JS", "Curso para pessoas que querem estudar JS", author);
+
+            course1.CourseDescription.Should().Be(course2.CourseDescription);
         }
 
     }

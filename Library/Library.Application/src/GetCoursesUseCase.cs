@@ -6,9 +6,9 @@ namespace Library.Application
 {
     public class GetCoursesUseCase : UseCase<ICollection<Course>>
     {
-        private int _page;
+        private readonly int _page;
 
-        private int _pageSize;
+        private readonly int _pageSize;
 
         public GetCoursesUseCase(int page, int pageSize, IUnitOfWork unitOfWork) : base(unitOfWork) {
             _page = page;

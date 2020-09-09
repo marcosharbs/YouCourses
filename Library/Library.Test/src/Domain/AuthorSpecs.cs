@@ -20,7 +20,7 @@ namespace Library.Test.Domain
         }
 
         [Fact]
-        public void Two_aythors_different_id_are_not_equals()
+        public void Two_authors_different_id_are_not_equals()
         {
             var author1 = Author.Create(Guid.NewGuid(), "Marcos Harbs", "http://marcosharbs.com");
             var author2 = Author.Create(Guid.NewGuid(), "Joao Azevedo", "http://joaozevedo.com");
@@ -34,6 +34,24 @@ namespace Library.Test.Domain
         {
             Action action = () => Author.Create("", "");
             action.Should().Throw<ArgumentException>();
+        }
+
+        [Fact]
+        public void Two_author_name_equals_same_name()
+        {
+            var author1 = Author.Create(Guid.NewGuid(), "Marcos Harbs", "http://marcosharbs.com");
+            var author2 = Author.Create(Guid.NewGuid(), "Marcos Harbs", "http://joaozevedo.com");
+
+            author1.AuthorName.Should().Be(author2.AuthorName);
+        }
+
+        [Fact]
+        public void Two_author_picture_equals_same_image()
+        {
+            var author1 = Author.Create(Guid.NewGuid(), "Marcos Harbs", "http://marcosharbs.com");
+            var author2 = Author.Create(Guid.NewGuid(), "Marcos Harbs", "http://marcosharbs.com");
+
+            author1.AuthorPicture.Should().Be(author2.AuthorPicture);
         }
 
     }

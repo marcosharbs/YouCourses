@@ -42,5 +42,23 @@ namespace Library.Test.Domain
             Action action = () => Video.Create("O que o JavaScript é capaz de fazer?", "");
             action.Should().Throw<ArgumentException>();
         }
+
+        [Fact]
+        public void Two_video_url_equals_same_url()
+        {
+            var video1 = Video.Create("O que o JavaScript é capaz de fazer?", "https://www.youtube.com/watch?v=Ptbk2af68e8");
+            var video2 = Video.Create("O que o JavaScript é capaz de fazer?", "https://www.youtube.com/watch?v=Ptbk2af68e8");
+
+            video1.VideoUrl.Should().Be(video2.VideoUrl);   
+        }
+
+        [Fact]
+        public void Two_video_name_equals_same_name()
+        {
+            var video1 = Video.Create("O que o JavaScript é capaz de fazer?", "https://www.youtube.com/watch?v=Ptbk2af68e8");
+            var video2 = Video.Create("O que o JavaScript é capaz de fazer?", "https://www.youtube.com/watch?v=Ptbk2af68e8");
+
+            video1.VideoName.Should().Be(video2.VideoName);   
+        }
     }
 }

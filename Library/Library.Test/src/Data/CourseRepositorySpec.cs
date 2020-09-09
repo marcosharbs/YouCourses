@@ -7,6 +7,7 @@ using System.Linq;
 
 namespace Library.Data.Repository
 {
+    [Collection("Database")]
     public class CourseRepositorySpec
     {
         [Fact]
@@ -59,6 +60,18 @@ namespace Library.Data.Repository
             courseDb.CourseName.Should().Be(course.CourseName);
             courseDb.Videos.Count().Should().Be(course.Videos.Count());
 
+            var coursesCount = courses.Count();
+
+            coursesCount.Should().Be(1);
+
+            var allCourses = courses.GetAll();
+            var partialCourses = courses.GetPartial(0, 20);
+
+            allCourses.Count.Should().Be(1);
+            partialCourses.Count.Should().Be(1);
+            allCourses.ToList()[0].Should().Be(courseDb);
+            partialCourses.ToList()[0].Should().Be(courseDb);
+
             unitOfWork.CommitUnit();
             unitOfWork.BeginUnit();
 
@@ -69,6 +82,14 @@ namespace Library.Data.Repository
             authors.Remove(author);
 
             unitOfWork.CommitUnit();
+
+            unitOfWork.BeginUnit();
+
+            courses = unitOfWork.Courses;
+
+            courses.AddOrUpdate(Course.Create("Curso de JS", "Curso básico de desenvolvimento javascript", author));
+
+            unitOfWork.RollbackUnit();
         }
     }
 }

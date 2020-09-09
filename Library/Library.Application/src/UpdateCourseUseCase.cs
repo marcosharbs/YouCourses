@@ -5,7 +5,7 @@ namespace Library.Application
 {
     public class UpdateCourseUseCase : UseCase<Course>
     {
-        private Course _course;
+        private readonly Course _course;
 
         public UpdateCourseUseCase(Course course,
                                    IUnitOfWork unitOfWork) : base(unitOfWork)

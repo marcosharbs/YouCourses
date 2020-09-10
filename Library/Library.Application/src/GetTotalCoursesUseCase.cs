@@ -1,11 +1,11 @@
-using Library.Domain.Common;
+using Library.Domain;
 
 namespace Library.Application
 {
-    public class GetTotalCoursesUseCase : UseCase<int>
+    public class GetTotalCoursesUseCase : UseCase<int, ILibraryUnitOfWork>
     {
 
-        public GetTotalCoursesUseCase(IUnitOfWork unitOfWork) : base(unitOfWork) { }
+        public GetTotalCoursesUseCase(ILibraryUnitOfWork unitOfWork) : base(unitOfWork) { }
 
         protected override int Action()
         {

@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Library.Domain.Common;
+using Core.Domain;
 using Dawn;
 
 namespace Library.Domain.AuthorAggregate.Model

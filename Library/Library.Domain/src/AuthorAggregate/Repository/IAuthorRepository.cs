@@ -1,4 +1,4 @@
-using Library.Domain.Common;
+using Core.Domain;
 using Library.Domain.AuthorAggregate.Model;
 
 namespace Library.Domain.AuthorAggregate.Repository

@@ -1,12 +1,13 @@
 using NHibernate;
-using Library.Domain.Common;
+using Library.Domain;
 using Library.Domain.AuthorAggregate.Model;
 using Library.Domain.CourseAggregate.Model;
 using Library.Data.Repository;
+using Core.Domain;
 
 namespace Library.Data
 {
-    public class NHibernateUnitOfWork : IUnitOfWork
+    public class NHibernateUnitOfWork : ILibraryUnitOfWork
     {
         private ISessionFactory _sessionFactory;
         private ISession _session;

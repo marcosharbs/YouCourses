@@ -1,11 +1,182 @@
+SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Application\src\UseCase.cs
+FN:15,T Library.Application.UseCase`2::Execute()
+FNDA:4,T Library.Application.UseCase`2::Execute()
+DA:16,4
+DA:19,4
+DA:20,4
+DA:21,4
+DA:22,4
+DA:23,4
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:29,4
+DA:30,4
+FN:9,System.Void Library.Application.UseCase`2::.ctor(U)
+FNDA:4,System.Void Library.Application.UseCase`2::.ctor(U)
+DA:10,4
+DA:11,4
+DA:12,4
+DA:13,4
+LF:16
+LH:12
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\AggregateRoot.cs
+FN:7,System.Void Core.Domain.AggregateRoot::.ctor(System.Guid)
+FNDA:150,System.Void Core.Domain.AggregateRoot::.ctor(System.Guid)
+DA:8,150
+FN:9,System.Void Core.Domain.AggregateRoot::.ctor()
+FNDA:6,System.Void Core.Domain.AggregateRoot::.ctor()
+DA:10,6
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\Entity.cs
+FN:6,System.Guid Core.Domain.Entity::get_Id()
+FNDA:229,System.Guid Core.Domain.Entity::get_Id()
+DA:7,229
+FN:24,System.Boolean Core.Domain.Entity::Equals(System.Object)
+FNDA:21,System.Boolean Core.Domain.Entity::Equals(System.Object)
+DA:25,21
+DA:26,21
+DA:28,21
+DA:29,0
+DA:31,21
+DA:32,10
+DA:34,11
+DA:35,21
+BRDA:28,14,0,0
+BRDA:28,14,1,21
+BRDA:31,26,0,10
+BRDA:31,26,1,11
+FN:37,System.Boolean Core.Domain.Entity::op_Equality(Core.Domain.Entity,Core.Domain.Entity)
+FNDA:21,System.Boolean Core.Domain.Entity::op_Equality(Core.Domain.Entity,Core.Domain.Entity)
+DA:38,21
+DA:39,21
+DA:40,19
+DA:42,2
+DA:43,2
+DA:45,0
+DA:46,21
+BRDA:39,2,0,19
+BRDA:39,2,1,2
+BRDA:39,13,0,19
+BRDA:39,13,1,2
+BRDA:42,20,0,2
+BRDA:42,20,1,0
+BRDA:42,31,0,2
+BRDA:42,31,1,0
+FN:48,System.Boolean Core.Domain.Entity::op_Inequality(Core.Domain.Entity,Core.Domain.Entity)
+FNDA:21,System.Boolean Core.Domain.Entity::op_Inequality(Core.Domain.Entity,Core.Domain.Entity)
+DA:49,21
+DA:50,21
+DA:51,21
+FN:53,System.Int32 Core.Domain.Entity::GetHashCode()
+FNDA:12,System.Int32 Core.Domain.Entity::GetHashCode()
+DA:54,12
+DA:55,12
+DA:56,12
+FN:8,System.Void Core.Domain.Entity::.ctor(System.Guid)
+FNDA:78,System.Void Core.Domain.Entity::.ctor(System.Guid)
+DA:9,78
+DA:10,78
+DA:11,78
+DA:12,0
+DA:13,0
+DA:14,0
+DA:15,78
+DA:16,78
+DA:17,78
+DA:18,78
+BRDA:11,21,0,0
+BRDA:11,21,1,78
+FN:19,System.Void Core.Domain.Entity::.ctor()
+FNDA:4,System.Void Core.Domain.Entity::.ctor()
+DA:20,4
+DA:21,4
+DA:22,4
+LF:35
+LH:30
+BRF:14
+BRH:10
+FNF:7
+FNH:7
+end_of_record
+SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\ValueObject.cs
+FN:12,System.Boolean Core.Domain.ValueObject`1::Equals(System.Object)
+FNDA:6,System.Boolean Core.Domain.ValueObject`1::Equals(System.Object)
+DA:13,6
+DA:14,6
+DA:16,6
+DA:17,0
+DA:19,6
+DA:20,6
+BRDA:16,24,0,0
+BRDA:16,24,1,6
+FN:22,System.Boolean Core.Domain.ValueObject`1::EqualsCore(Core.Domain.ValueObject`1<T>)
+FNDA:6,System.Boolean Core.Domain.ValueObject`1::EqualsCore(Core.Domain.ValueObject`1<T>)
+DA:23,6
+DA:24,6
+DA:25,6
+FN:27,System.Int32 Core.Domain.ValueObject`1::GetHashCode()
+FNDA:0,System.Int32 Core.Domain.ValueObject`1::GetHashCode()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+BRDA:29,14,0,0
+BRDA:29,14,1,0
+BRDA:30,5,0,0
+BRDA:30,5,1,0
+FN:33,System.Boolean Core.Domain.ValueObject`1::op_Equality(Core.Domain.ValueObject`1<T>,Core.Domain.ValueObject`1<T>)
+FNDA:0,System.Boolean Core.Domain.ValueObject`1::op_Equality(Core.Domain.ValueObject`1<T>,Core.Domain.ValueObject`1<T>)
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+BRDA:35,2,0,0
+BRDA:35,2,1,0
+BRDA:35,13,0,0
+BRDA:35,13,1,0
+BRDA:38,20,0,0
+BRDA:38,20,1,0
+BRDA:38,31,0,0
+BRDA:38,31,1,0
+FN:44,System.Boolean Core.Domain.ValueObject`1::op_Inequality(Core.Domain.ValueObject`1<T>,Core.Domain.ValueObject`1<T>)
+FNDA:0,System.Boolean Core.Domain.ValueObject`1::op_Inequality(Core.Domain.ValueObject`1<T>,Core.Domain.ValueObject`1<T>)
+DA:45,0
+DA:46,0
+DA:47,0
+FN:9,System.Void Core.Domain.ValueObject`1::.ctor()
+FNDA:651,System.Void Core.Domain.ValueObject`1::.ctor()
+DA:10,651
+LF:24
+LH:9
+BRF:14
+BRH:1
+FNF:6
+FNH:3
+end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\GetCoursesUseCase.cs
 FN:18,System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Application.GetCoursesUseCase::Action()
 FNDA:1,System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Application.GetCoursesUseCase::Action()
 DA:19,1
 DA:20,1
 DA:21,1
-FN:12,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.Common.IUnitOfWork)
-FNDA:2,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.Common.IUnitOfWork)
+FN:12,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.ILibraryUnitOfWork)
+FNDA:2,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.ILibraryUnitOfWork)
 DA:13,2
 DA:14,1
 DA:15,1
@@ -19,19 +190,19 @@ FNH:2
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\GetTotalCoursesUseCase.cs
 FN:10,System.Int32 Library.Application.GetTotalCoursesUseCase::Action()
-FNDA:0,System.Int32 Library.Application.GetTotalCoursesUseCase::Action()
-DA:11,0
-DA:12,0
-DA:13,0
-FN:7,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.Common.IUnitOfWork)
-FNDA:0,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.Common.IUnitOfWork)
-DA:8,0
+FNDA:1,System.Int32 Library.Application.GetTotalCoursesUseCase::Action()
+DA:11,1
+DA:12,1
+DA:13,1
+FN:7,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.ILibraryUnitOfWork)
+FNDA:3,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.ILibraryUnitOfWork)
+DA:8,3
 LF:4
-LH:0
+LH:4
 BRF:0
 BRH:0
 FNF:2
-FNH:0
+FNH:2
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\SaveCourseUseCase.cs
 FN:16,Library.Domain.CourseAggregate.Model.Course Library.Application.SaveCourseUseCase::Action()
@@ -41,8 +212,8 @@ DA:18,1
 DA:19,1
 DA:20,1
 DA:21,1
-FN:10,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.Common.IUnitOfWork)
-FNDA:1,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.Common.IUnitOfWork)
+FN:10,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
+FNDA:1,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
 DA:11,1
 DA:12,1
 DA:13,1
@@ -56,60 +227,32 @@ FNH:2
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\UpdateCourseUseCase.cs
 FN:16,Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()
-FNDA:0,Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()
-DA:17,0
-DA:18,0
-DA:20,0
-DA:22,0
-DA:24,0
-DA:25,0
-DA:26,0
-DA:27,0
-DA:29,0
-DA:30,0
-DA:32,0
-DA:34,0
-DA:35,0
-BRDA:24,81,1,0
-BRDA:24,81,0,0
-FN:10,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.Common.IUnitOfWork)
-FNDA:0,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.Common.IUnitOfWork)
-DA:11,0
-DA:12,0
-DA:13,0
-DA:14,0
+FNDA:1,Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()
+DA:17,1
+DA:18,1
+DA:20,1
+DA:22,1
+DA:24,5
+DA:25,1
+DA:26,1
+DA:27,1
+DA:29,1
+DA:30,1
+DA:32,1
+DA:34,1
+DA:35,1
+BRDA:24,81,1,1
+BRDA:24,81,0,1
+FN:10,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
+FNDA:1,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
+DA:11,1
+DA:12,1
+DA:13,1
+DA:14,1
 LF:17
-LH:0
+LH:17
 BRF:2
-BRH:0
-FNF:2
-FNH:0
-end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\UseCase.cs
-FN:15,T Library.Application.UseCase`1::Execute()
-FNDA:2,T Library.Application.UseCase`1::Execute()
-DA:16,2
-DA:19,2
-DA:20,2
-DA:21,2
-DA:22,2
-DA:23,2
-DA:24,0
-DA:25,0
-DA:26,0
-DA:27,0
-DA:29,2
-DA:30,2
-FN:9,System.Void Library.Application.UseCase`1::.ctor(Library.Domain.Common.IUnitOfWork)
-FNDA:2,System.Void Library.Application.UseCase`1::.ctor(Library.Domain.Common.IUnitOfWork)
-DA:10,2
-DA:11,2
-DA:12,2
-DA:13,2
-LF:16
-LH:12
-BRF:0
-BRH:0
+BRH:2
 FNF:2
 FNH:2
 end_of_record
@@ -130,46 +273,46 @@ FNF:1
 FNH:1
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\NHibernateUnitOfWork.cs
-FN:22,Library.Domain.Common.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()
-FNDA:7,Library.Domain.Common.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()
-DA:23,7
+FN:23,Core.Domain.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()
+FNDA:7,Core.Domain.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()
 DA:24,7
 DA:25,7
-FN:30,Library.Domain.Common.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()
-FNDA:4,Library.Domain.Common.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()
-DA:31,4
+DA:26,7
+FN:31,Core.Domain.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()
+FNDA:4,Core.Domain.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()
 DA:32,4
 DA:33,4
-FN:36,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
+DA:34,4
+FN:37,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
 FNDA:8,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
-DA:37,8
 DA:38,8
 DA:39,8
 DA:40,8
-FN:42,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
+DA:41,8
+FN:43,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
 FNDA:6,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
-DA:43,6
 DA:44,6
 DA:45,6
 DA:46,6
-FN:48,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
+DA:47,6
+FN:49,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
 FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
-DA:49,2
 DA:50,2
 DA:51,2
-DA:53,2
+DA:52,2
 DA:54,2
 DA:55,2
-BRDA:50,12,0,2
-BRDA:50,12,1,2
-BRDA:53,37,0,2
-BRDA:53,37,1,2
-FN:14,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
+DA:56,2
+BRDA:51,12,0,2
+BRDA:51,12,1,2
+BRDA:54,37,0,2
+BRDA:54,37,1,2
+FN:15,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
 FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
-DA:15,2
 DA:16,2
 DA:17,2
 DA:18,2
+DA:19,2
 LF:24
 LH:24
 BRF:4
@@ -362,62 +505,62 @@ FNH:1
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\Course.cs
 FN:11,Library.Domain.CourseAggregate.Model.CourseName Library.Domain.CourseAggregate.Model.Course::get_CourseName()
-FNDA:35,Library.Domain.CourseAggregate.Model.CourseName Library.Domain.CourseAggregate.Model.Course::get_CourseName()
-DA:12,35
+FNDA:39,Library.Domain.CourseAggregate.Model.CourseName Library.Domain.CourseAggregate.Model.Course::get_CourseName()
+DA:12,39
 FN:12,Library.Domain.CourseAggregate.Model.CourseDescription Library.Domain.CourseAggregate.Model.Course::get_CourseDescription()
-FNDA:35,Library.Domain.CourseAggregate.Model.CourseDescription Library.Domain.CourseAggregate.Model.Course::get_CourseDescription()
-DA:13,35
+FNDA:39,Library.Domain.CourseAggregate.Model.CourseDescription Library.Domain.CourseAggregate.Model.Course::get_CourseDescription()
+DA:13,39
 FN:13,Library.Domain.AuthorAggregate.Model.Author Library.Domain.CourseAggregate.Model.Course::get_Author()
 FNDA:1,Library.Domain.AuthorAggregate.Model.Author Library.Domain.CourseAggregate.Model.Course::get_Author()
 DA:14,1
 FN:14,System.Collections.Generic.IList`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get__videos()
-FNDA:85,System.Collections.Generic.IList`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get__videos()
-DA:15,85
+FNDA:95,System.Collections.Generic.IList`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get__videos()
+DA:15,95
 FN:18,System.Collections.Generic.IEnumerable`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get_Videos()
-FNDA:9,System.Collections.Generic.IEnumerable`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get_Videos()
-DA:19,9
-DA:20,9
-DA:21,9
+FNDA:10,System.Collections.Generic.IEnumerable`1<Library.Domain.CourseAggregate.Model.Video> Library.Domain.CourseAggregate.Model.Course::get_Videos()
+DA:19,10
+DA:20,10
+DA:21,10
 FN:40,System.Void Library.Domain.CourseAggregate.Model.Course::UpdateName(System.String)
-FNDA:1,System.Void Library.Domain.CourseAggregate.Model.Course::UpdateName(System.String)
-DA:41,1
-DA:42,1
-DA:43,1
+FNDA:2,System.Void Library.Domain.CourseAggregate.Model.Course::UpdateName(System.String)
+DA:41,2
+DA:42,2
+DA:43,2
 FN:45,System.Void Library.Domain.CourseAggregate.Model.Course::UpdateDescription(System.String)
-FNDA:1,System.Void Library.Domain.CourseAggregate.Model.Course::UpdateDescription(System.String)
-DA:46,1
-DA:47,1
-DA:48,1
+FNDA:2,System.Void Library.Domain.CourseAggregate.Model.Course::UpdateDescription(System.String)
+DA:46,2
+DA:47,2
+DA:48,2
 FN:50,System.Void Library.Domain.CourseAggregate.Model.Course::AddVideo(Library.Domain.CourseAggregate.Model.Video)
-FNDA:18,System.Void Library.Domain.CourseAggregate.Model.Course::AddVideo(Library.Domain.CourseAggregate.Model.Video)
-DA:51,18
-DA:52,49
+FNDA:21,System.Void Library.Domain.CourseAggregate.Model.Course::AddVideo(Library.Domain.CourseAggregate.Model.Video)
+DA:51,21
+DA:52,52
 DA:53,2
-DA:55,16
-DA:56,16
+DA:55,19
+DA:56,19
 BRDA:52,45,0,2
-BRDA:52,45,1,16
+BRDA:52,45,1,19
 FN:58,System.Void Library.Domain.CourseAggregate.Model.Course::RemoveVideos()
-FNDA:1,System.Void Library.Domain.CourseAggregate.Model.Course::RemoveVideos()
-DA:59,1
-DA:60,1
-DA:61,1
+FNDA:2,System.Void Library.Domain.CourseAggregate.Model.Course::RemoveVideos()
+DA:59,2
+DA:60,2
+DA:61,2
 FN:63,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
-FNDA:23,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
-DA:64,23
-DA:65,23
-DA:66,23
-DA:67,23
-DA:68,23
-DA:69,23
-DA:70,23
-DA:71,23
-DA:72,16
+FNDA:25,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
+DA:64,25
+DA:65,25
+DA:66,25
+DA:67,25
+DA:68,25
+DA:69,25
+DA:70,25
+DA:71,25
+DA:72,18
 FN:74,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author)
-FNDA:3,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author)
-DA:75,3
-DA:76,3
-DA:77,3
+FNDA:5,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.Guid,System.String,System.String,Library.Domain.AuthorAggregate.Model.Author)
+DA:75,5
+DA:76,5
+DA:77,5
 FN:79,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
 FNDA:20,Library.Domain.CourseAggregate.Model.Course Library.Domain.CourseAggregate.Model.Course::Create(System.String,System.String,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
 DA:80,20
@@ -429,21 +572,21 @@ DA:85,18
 DA:86,18
 DA:87,13
 FN:36,System.Void Library.Domain.CourseAggregate.Model.Course::<.ctor>b__18_0(Library.Domain.CourseAggregate.Model.Video)
-FNDA:22,System.Void Library.Domain.CourseAggregate.Model.Course::<.ctor>b__18_0(Library.Domain.CourseAggregate.Model.Video)
-DA:37,22
+FNDA:24,System.Void Library.Domain.CourseAggregate.Model.Course::<.ctor>b__18_0(Library.Domain.CourseAggregate.Model.Video)
+DA:37,24
 FN:23,System.Void Library.Domain.CourseAggregate.Model.Course::.ctor()
 FNDA:3,System.Void Library.Domain.CourseAggregate.Model.Course::.ctor()
 DA:24,3
 FN:29,System.Void Library.Domain.CourseAggregate.Model.Course::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.CourseName,Library.Domain.CourseAggregate.Model.CourseDescription,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
-FNDA:19,System.Void Library.Domain.CourseAggregate.Model.Course::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.CourseName,Library.Domain.CourseAggregate.Model.CourseDescription,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
-DA:30,19
-DA:31,19
-DA:32,19
-DA:33,19
-DA:34,19
-DA:35,18
-DA:36,18
-DA:38,16
+FNDA:21,System.Void Library.Domain.CourseAggregate.Model.Course::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.CourseName,Library.Domain.CourseAggregate.Model.CourseDescription,Library.Domain.AuthorAggregate.Model.Author,System.Collections.Generic.List`1<Library.Domain.CourseAggregate.Model.Video>)
+DA:30,21
+DA:31,21
+DA:32,21
+DA:33,21
+DA:34,21
+DA:35,20
+DA:36,20
+DA:38,18
 LF:49
 LH:49
 BRF:2
@@ -453,21 +596,21 @@ FNH:16
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\CourseDescription.cs
 FN:8,System.String Library.Domain.CourseAggregate.Model.CourseDescription::get_Description()
-FNDA:3,System.String Library.Domain.CourseAggregate.Model.CourseDescription::get_Description()
-DA:9,3
+FNDA:4,System.String Library.Domain.CourseAggregate.Model.CourseDescription::get_Description()
+DA:9,4
 FN:10,System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor()
 FNDA:15,System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor()
 DA:11,15
 FN:12,System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor(System.String)
-FNDA:23,System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor(System.String)
-DA:13,23
-DA:14,23
-DA:15,23
-DA:16,23
-DA:17,23
-DA:18,23
-DA:19,23
-DA:20,20
+FNDA:26,System.Void Library.Domain.CourseAggregate.Model.CourseDescription::.ctor(System.String)
+DA:13,26
+DA:14,26
+DA:15,26
+DA:16,26
+DA:17,26
+DA:18,26
+DA:19,26
+DA:20,23
 FN:22,System.Boolean Library.Domain.CourseAggregate.Model.CourseDescription/<GetEqualityComponents>d__5::MoveNext()
 FNDA:2,System.Boolean Library.Domain.CourseAggregate.Model.CourseDescription/<GetEqualityComponents>d__5::MoveNext()
 DA:23,2
@@ -482,20 +625,20 @@ FNH:4
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\CourseName.cs
 FN:8,System.String Library.Domain.CourseAggregate.Model.CourseName::get_Name()
-FNDA:3,System.String Library.Domain.CourseAggregate.Model.CourseName::get_Name()
-DA:9,3
+FNDA:4,System.String Library.Domain.CourseAggregate.Model.CourseName::get_Name()
+DA:9,4
 FN:10,System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor()
 FNDA:15,System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor()
 DA:11,15
 FN:12,System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor(System.String)
-FNDA:24,System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor(System.String)
-DA:13,24
-DA:14,24
-DA:15,24
-DA:16,24
-DA:17,24
-DA:18,24
-DA:19,23
+FNDA:27,System.Void Library.Domain.CourseAggregate.Model.CourseName::.ctor(System.String)
+DA:13,27
+DA:14,27
+DA:15,27
+DA:16,27
+DA:17,27
+DA:18,27
+DA:19,26
 FN:21,System.Boolean Library.Domain.CourseAggregate.Model.CourseName/<GetEqualityComponents>d__5::MoveNext()
 FNDA:2,System.Boolean Library.Domain.CourseAggregate.Model.CourseName/<GetEqualityComponents>d__5::MoveNext()
 DA:22,2
@@ -526,20 +669,20 @@ DA:25,2
 DA:26,2
 DA:27,2
 FN:29,Library.Domain.CourseAggregate.Model.Video Library.Domain.CourseAggregate.Model.Video::Create(System.String,System.String)
-FNDA:26,Library.Domain.CourseAggregate.Model.Video Library.Domain.CourseAggregate.Model.Video::Create(System.String,System.String)
-DA:30,26
-DA:31,26
-DA:32,24
+FNDA:28,Library.Domain.CourseAggregate.Model.Video Library.Domain.CourseAggregate.Model.Video::Create(System.String,System.String)
+DA:30,28
+DA:31,28
+DA:32,26
 FN:10,System.Void Library.Domain.CourseAggregate.Model.Video::.ctor()
 FNDA:6,System.Void Library.Domain.CourseAggregate.Model.Video::.ctor()
 DA:11,6
 FN:12,System.Void Library.Domain.CourseAggregate.Model.Video::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.VideoName,Library.Domain.CourseAggregate.Model.VideoUrl)
-FNDA:26,System.Void Library.Domain.CourseAggregate.Model.Video::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.VideoName,Library.Domain.CourseAggregate.Model.VideoUrl)
-DA:13,26
-DA:14,26
-DA:15,26
-DA:16,26
-DA:17,26
+FNDA:28,System.Void Library.Domain.CourseAggregate.Model.Video::.ctor(System.Guid,Library.Domain.CourseAggregate.Model.VideoName,Library.Domain.CourseAggregate.Model.VideoUrl)
+DA:13,28
+DA:14,28
+DA:15,28
+DA:16,28
+DA:17,28
 LF:17
 LH:17
 BRF:0
@@ -555,11 +698,11 @@ FN:10,System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor()
 FNDA:30,System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor()
 DA:11,30
 FN:12,System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor(System.String)
-FNDA:28,System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor(System.String)
-DA:13,28
-DA:14,28
-DA:15,28
-DA:16,27
+FNDA:30,System.Void Library.Domain.CourseAggregate.Model.VideoName::.ctor(System.String)
+DA:13,30
+DA:14,30
+DA:15,30
+DA:16,29
 FN:18,System.Boolean Library.Domain.CourseAggregate.Model.VideoName/<GetEqualityComponents>d__5::MoveNext()
 FNDA:2,System.Boolean Library.Domain.CourseAggregate.Model.VideoName/<GetEqualityComponents>d__5::MoveNext()
 DA:19,2
@@ -580,11 +723,11 @@ FN:10,System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor()
 FNDA:30,System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor()
 DA:11,30
 FN:12,System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor(System.String)
-FNDA:27,System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor(System.String)
-DA:13,27
-DA:14,27
-DA:15,27
-DA:16,26
+FNDA:29,System.Void Library.Domain.CourseAggregate.Model.VideoUrl::.ctor(System.String)
+DA:13,29
+DA:14,29
+DA:15,29
+DA:16,28
 FN:18,System.Boolean Library.Domain.CourseAggregate.Model.VideoUrl/<GetEqualityComponents>d__5::MoveNext()
 FNDA:2,System.Boolean Library.Domain.CourseAggregate.Model.VideoUrl/<GetEqualityComponents>d__5::MoveNext()
 DA:19,2
@@ -597,149 +740,6 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\Common\AggregateRoot.cs
-FN:7,System.Void Library.Domain.Common.AggregateRoot::.ctor(System.Guid)
-FNDA:141,System.Void Library.Domain.Common.AggregateRoot::.ctor(System.Guid)
-DA:8,141
-FN:9,System.Void Library.Domain.Common.AggregateRoot::.ctor()
-FNDA:6,System.Void Library.Domain.Common.AggregateRoot::.ctor()
-DA:10,6
-LF:2
-LH:2
-BRF:0
-BRH:0
-FNF:2
-FNH:2
-end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\Common\Entity.cs
-FN:6,System.Guid Library.Domain.Common.Entity::get_Id()
-FNDA:213,System.Guid Library.Domain.Common.Entity::get_Id()
-DA:7,213
-FN:24,System.Boolean Library.Domain.Common.Entity::Equals(System.Object)
-FNDA:18,System.Boolean Library.Domain.Common.Entity::Equals(System.Object)
-DA:25,18
-DA:26,18
-DA:28,18
-DA:29,0
-DA:31,18
-DA:32,10
-DA:34,8
-DA:35,18
-BRDA:28,14,0,0
-BRDA:28,14,1,18
-BRDA:31,26,0,10
-BRDA:31,26,1,8
-FN:37,System.Boolean Library.Domain.Common.Entity::op_Equality(Library.Domain.Common.Entity,Library.Domain.Common.Entity)
-FNDA:18,System.Boolean Library.Domain.Common.Entity::op_Equality(Library.Domain.Common.Entity,Library.Domain.Common.Entity)
-DA:38,18
-DA:39,18
-DA:40,16
-DA:42,2
-DA:43,2
-DA:45,0
-DA:46,18
-BRDA:39,2,0,16
-BRDA:39,2,1,2
-BRDA:39,13,0,16
-BRDA:39,13,1,2
-BRDA:42,20,0,2
-BRDA:42,20,1,0
-BRDA:42,31,0,2
-BRDA:42,31,1,0
-FN:48,System.Boolean Library.Domain.Common.Entity::op_Inequality(Library.Domain.Common.Entity,Library.Domain.Common.Entity)
-FNDA:18,System.Boolean Library.Domain.Common.Entity::op_Inequality(Library.Domain.Common.Entity,Library.Domain.Common.Entity)
-DA:49,18
-DA:50,18
-DA:51,18
-FN:53,System.Int32 Library.Domain.Common.Entity::GetHashCode()
-FNDA:12,System.Int32 Library.Domain.Common.Entity::GetHashCode()
-DA:54,12
-DA:55,12
-DA:56,12
-FN:8,System.Void Library.Domain.Common.Entity::.ctor(System.Guid)
-FNDA:73,System.Void Library.Domain.Common.Entity::.ctor(System.Guid)
-DA:9,73
-DA:10,73
-DA:11,73
-DA:12,0
-DA:13,0
-DA:14,0
-DA:15,73
-DA:16,73
-DA:17,73
-DA:18,73
-BRDA:11,21,0,0
-BRDA:11,21,1,73
-FN:19,System.Void Library.Domain.Common.Entity::.ctor()
-FNDA:4,System.Void Library.Domain.Common.Entity::.ctor()
-DA:20,4
-DA:21,4
-DA:22,4
-LF:35
-LH:30
-BRF:14
-BRH:10
-FNF:7
-FNH:7
-end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\Common\ValueObject.cs
-FN:12,System.Boolean Library.Domain.Common.ValueObject`1::Equals(System.Object)
-FNDA:6,System.Boolean Library.Domain.Common.ValueObject`1::Equals(System.Object)
-DA:13,6
-DA:14,6
-DA:16,6
-DA:17,0
-DA:19,6
-DA:20,6
-BRDA:16,24,0,0
-BRDA:16,24,1,6
-FN:22,System.Boolean Library.Domain.Common.ValueObject`1::EqualsCore(Library.Domain.Common.ValueObject`1<T>)
-FNDA:6,System.Boolean Library.Domain.Common.ValueObject`1::EqualsCore(Library.Domain.Common.ValueObject`1<T>)
-DA:23,6
-DA:24,6
-DA:25,6
-FN:27,System.Int32 Library.Domain.Common.ValueObject`1::GetHashCode()
-FNDA:0,System.Int32 Library.Domain.Common.ValueObject`1::GetHashCode()
-DA:28,0
-DA:29,0
-DA:30,0
-DA:31,0
-BRDA:29,14,0,0
-BRDA:29,14,1,0
-BRDA:30,5,0,0
-BRDA:30,5,1,0
-FN:33,System.Boolean Library.Domain.Common.ValueObject`1::op_Equality(Library.Domain.Common.ValueObject`1<T>,Library.Domain.Common.ValueObject`1<T>)
-FNDA:0,System.Boolean Library.Domain.Common.ValueObject`1::op_Equality(Library.Domain.Common.ValueObject`1<T>,Library.Domain.Common.ValueObject`1<T>)
-DA:34,0
-DA:35,0
-DA:36,0
-DA:38,0
-DA:39,0
-DA:41,0
-DA:42,0
-BRDA:35,2,0,0
-BRDA:35,2,1,0
-BRDA:35,13,0,0
-BRDA:35,13,1,0
-BRDA:38,20,0,0
-BRDA:38,20,1,0
-BRDA:38,31,0,0
-BRDA:38,31,1,0
-FN:44,System.Boolean Library.Domain.Common.ValueObject`1::op_Inequality(Library.Domain.Common.ValueObject`1<T>,Library.Domain.Common.ValueObject`1<T>)
-FNDA:0,System.Boolean Library.Domain.Common.ValueObject`1::op_Inequality(Library.Domain.Common.ValueObject`1<T>,Library.Domain.Common.ValueObject`1<T>)
-DA:45,0
-DA:46,0
-DA:47,0
-FN:9,System.Void Library.Domain.Common.ValueObject`1::.ctor()
-FNDA:615,System.Void Library.Domain.Common.ValueObject`1::.ctor()
-DA:10,615
-LF:24
-LH:9
-BRF:14
-BRH:1
-FNF:6
-FNH:3
-end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\Author.cs
 FN:7,Library.Domain.AuthorAggregate.Model.AuthorName Library.Domain.AuthorAggregate.Model.Author::get_AuthorName()
 FNDA:4,Library.Domain.AuthorAggregate.Model.AuthorName Library.Domain.AuthorAggregate.Model.Author::get_AuthorName()
@@ -748,25 +748,25 @@ FN:8,Library.Domain.AuthorAggregate.Model.AuthorPicture Library.Domain.AuthorAgg
 FNDA:2,Library.Domain.AuthorAggregate.Model.AuthorPicture Library.Domain.AuthorAggregate.Model.Author::get_AuthorPicture()
 DA:9,2
 FN:19,Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.Guid,System.String,System.String)
-FNDA:29,Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.Guid,System.String,System.String)
-DA:20,29
-DA:21,29
-DA:22,28
+FNDA:30,Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.Guid,System.String,System.String)
+DA:20,30
+DA:21,30
+DA:22,29
 FN:24,Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.String,System.String)
-FNDA:18,Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.String,System.String)
-DA:25,18
-DA:26,18
-DA:27,17
+FNDA:19,Library.Domain.AuthorAggregate.Model.Author Library.Domain.AuthorAggregate.Model.Author::Create(System.String,System.String)
+DA:25,19
+DA:26,19
+DA:27,18
 FN:10,System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor()
 FNDA:3,System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor()
 DA:11,3
 FN:12,System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor(System.Guid,Library.Domain.AuthorAggregate.Model.AuthorName,Library.Domain.AuthorAggregate.Model.AuthorPicture)
-FNDA:28,System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor(System.Guid,Library.Domain.AuthorAggregate.Model.AuthorName,Library.Domain.AuthorAggregate.Model.AuthorPicture)
-DA:13,28
-DA:14,28
-DA:15,28
-DA:16,28
-DA:17,28
+FNDA:29,System.Void Library.Domain.AuthorAggregate.Model.Author::.ctor(System.Guid,Library.Domain.AuthorAggregate.Model.AuthorName,Library.Domain.AuthorAggregate.Model.AuthorPicture)
+DA:13,29
+DA:14,29
+DA:15,29
+DA:16,29
+DA:17,29
 LF:14
 LH:14
 BRF:0
@@ -782,11 +782,11 @@ FN:10,System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor()
 FNDA:24,System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor()
 DA:11,24
 FN:12,System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor(System.String)
-FNDA:29,System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor(System.String)
-DA:13,29
-DA:14,29
-DA:15,29
-DA:16,28
+FNDA:30,System.Void Library.Domain.AuthorAggregate.Model.AuthorName::.ctor(System.String)
+DA:13,30
+DA:14,30
+DA:15,30
+DA:16,29
 FN:18,System.Boolean Library.Domain.AuthorAggregate.Model.AuthorName/<GetEqualityComponents>d__5::MoveNext()
 FNDA:2,System.Boolean Library.Domain.AuthorAggregate.Model.AuthorName/<GetEqualityComponents>d__5::MoveNext()
 DA:19,2
@@ -807,11 +807,11 @@ FN:9,System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor()
 FNDA:24,System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor()
 DA:10,24
 FN:11,System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor(System.String)
-FNDA:28,System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor(System.String)
-DA:12,28
-DA:13,28
-DA:14,28
-DA:15,28
+FNDA:29,System.Void Library.Domain.AuthorAggregate.Model.AuthorPicture::.ctor(System.String)
+DA:12,29
+DA:13,29
+DA:14,29
+DA:15,29
 FN:17,System.Boolean Library.Domain.AuthorAggregate.Model.AuthorPicture/<GetEqualityComponents>d__5::MoveNext()
 FNDA:2,System.Boolean Library.Domain.AuthorAggregate.Model.AuthorPicture/<GetEqualityComponents>d__5::MoveNext()
 DA:18,2

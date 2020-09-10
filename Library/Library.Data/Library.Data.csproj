@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Domain\Core.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

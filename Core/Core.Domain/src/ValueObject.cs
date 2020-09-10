@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Library.Domain.Common
+namespace Core.Domain
 {
     public abstract class ValueObject<T> where T: ValueObject<T>
     {

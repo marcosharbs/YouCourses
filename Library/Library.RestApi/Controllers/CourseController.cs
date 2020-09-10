@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Library.Application;
-using Library.Domain.Common;
+using Library.Domain;
 using Library.RestApi.Model;
 
 namespace Library.RestApi.Controllers
@@ -9,9 +9,9 @@ namespace Library.RestApi.Controllers
     [Route("api/course")]
     public class CourseController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly ILibraryUnitOfWork _unitOfWork;
 
-        public CourseController(IUnitOfWork unitOfWork)
+        public CourseController(ILibraryUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }

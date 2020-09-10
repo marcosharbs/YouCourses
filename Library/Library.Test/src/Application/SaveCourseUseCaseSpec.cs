@@ -6,7 +6,7 @@ using FluentAssertions;
 using Moq;
 using Library.Domain.CourseAggregate.Repository;
 using Library.Domain.AuthorAggregate.Repository;
-using Library.Domain.Common;
+using Library.Domain;
 
 namespace Library.Test.Data
 {
@@ -24,7 +24,7 @@ namespace Library.Test.Data
             var mockAuthorRepository = new Mock<IAuthorRepository>();
             mockAuthorRepository.Setup(mock => mock.AddOrUpdate(author));
 
-            var mockUnitOfWork = new Mock<IUnitOfWork>();
+            var mockUnitOfWork = new Mock<ILibraryUnitOfWork>();
             mockUnitOfWork.SetupGet(mock => mock.Courses).Returns(mockCoursesRepository.Object);
             mockUnitOfWork.SetupGet(mock => mock.Authors).Returns(mockAuthorRepository.Object);
 

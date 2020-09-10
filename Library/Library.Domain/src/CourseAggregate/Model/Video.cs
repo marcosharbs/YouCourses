@@ -1,5 +1,5 @@
 using System;
-using Library.Domain.Common;
+using Core.Domain;
 
 namespace Library.Domain.CourseAggregate.Model 
 {

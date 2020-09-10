@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Library.Data;
 using NHibernate;
-using Library.Domain.Common;
+using Library.Domain;
 
 namespace Library.RestApi
 {
@@ -22,7 +22,7 @@ namespace Library.RestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ISessionFactory>(sp => SessionHelper.GetSessionFactory(Configuration.GetSection("Database")["ConnectionSrtring"]));
-            services.AddScoped<IUnitOfWork, NHibernateUnitOfWork>();
+            services.AddScoped<ILibraryUnitOfWork, NHibernateUnitOfWork>();
             services.AddControllers();
         }
 

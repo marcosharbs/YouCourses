@@ -2,7 +2,7 @@ using Xunit;
 using Library.Domain.CourseAggregate.Repository;
 using Library.Application;
 using Moq;
-using Library.Domain.Common;
+using Library.Domain;
 using System.Collections.Generic;
 using Library.Domain.CourseAggregate.Model;
 using Library.Domain.AuthorAggregate.Model;
@@ -25,7 +25,7 @@ namespace Library.Test.Data
             var mockCoursesRepository = new Mock<ICourseRepository>();
             mockCoursesRepository.Setup(mock => mock.GetPartial(0, 20)).Returns(coursesList);
 
-            var mockUnitOfWork = new Mock<IUnitOfWork>();
+            var mockUnitOfWork = new Mock<ILibraryUnitOfWork>();
             mockUnitOfWork.SetupGet(mock => mock.Courses).Returns(mockCoursesRepository.Object);
 
             var useCase = new GetCoursesUseCase(0, 20, mockUnitOfWork.Object);

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 using Dawn;
-using Library.Domain.Common;
+using Core.Domain;
 using Library.Domain.AuthorAggregate.Model;
 using System.Linq;
 

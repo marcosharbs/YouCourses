@@ -4,6 +4,8 @@
     <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
     <ProjectReference Include="..\Library.Data\Library.Data.csproj" />
     <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Domain\Core.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Application\Core.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

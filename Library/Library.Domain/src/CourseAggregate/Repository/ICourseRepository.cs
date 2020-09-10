@@ -1,4 +1,4 @@
-using Library.Domain.Common;
+using Core.Domain;
 using Library.Domain.CourseAggregate.Model;
 
 namespace Library.Domain.CourseAggregate.Repository

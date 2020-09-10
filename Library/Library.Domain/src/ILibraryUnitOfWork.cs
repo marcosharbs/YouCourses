@@ -1,14 +1,12 @@
 using Library.Domain.AuthorAggregate.Model;
 using Library.Domain.CourseAggregate.Model;
+using Core.Domain;
 
-namespace Library.Domain.Common
+namespace Library.Domain
 {
-    public interface IUnitOfWork
+    public interface ILibraryUnitOfWork : IUnitOfWork
     {
         IRepository<Author> Authors { get; }
         IRepository<Course> Courses { get; }
-        void BeginUnit();
-        void CommitUnit();
-        void RollbackUnit();
     }
 }

@@ -1,13 +1,13 @@
-using Library.Domain.Common;
+using Core.Domain;
 using System;
 
 namespace Library.Application
 {
-    public abstract class UseCase<T>
+    public abstract class UseCase<T, U> where U : IUnitOfWork
     {
-        protected IUnitOfWork _unitOfWork;
+        protected U _unitOfWork;
 
-        public UseCase(IUnitOfWork unitOfWork)
+        public UseCase(U unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -21,10 +21,10 @@ namespace Library.Application
                 result = Action();
                 _unitOfWork.CommitUnit();
             }
-            catch (Exception e)
+            catch
             {
                 _unitOfWork.RollbackUnit();
-                throw e;
+                throw;
             }
             return result;
         }

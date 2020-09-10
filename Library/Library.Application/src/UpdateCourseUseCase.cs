@@ -1,14 +1,14 @@
-using Library.Domain.Common;
+using Library.Domain;
 using Library.Domain.CourseAggregate.Model;
 
 namespace Library.Application
 {
-    public class UpdateCourseUseCase : UseCase<Course>
+    public class UpdateCourseUseCase : UseCase<Course, ILibraryUnitOfWork>
     {
         private readonly Course _course;
 
         public UpdateCourseUseCase(Course course,
-                                   IUnitOfWork unitOfWork) : base(unitOfWork)
+                                   ILibraryUnitOfWork unitOfWork) : base(unitOfWork)
         {
             _course = course;
         }

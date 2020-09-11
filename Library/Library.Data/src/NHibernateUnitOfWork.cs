@@ -1,9 +1,8 @@
 using NHibernate;
 using Library.Domain;
-using Library.Domain.AuthorAggregate.Model;
-using Library.Domain.CourseAggregate.Model;
+using Library.Domain.AuthorAggregate.Repository;
+using Library.Domain.CourseAggregate.Repository;
 using Library.Data.Repository;
-using Core.Domain;
 
 namespace Library.Data
 {
@@ -18,7 +17,7 @@ namespace Library.Data
             _sessionFactory = sessionFactory;
         }
 
-        public IRepository<Author> Authors
+        public IAuthorRepository Authors
         {
             get
             {
@@ -26,7 +25,7 @@ namespace Library.Data
             }
         }
 
-        public IRepository<Course> Courses
+        public ICourseRepository Courses
         {
             get
             {

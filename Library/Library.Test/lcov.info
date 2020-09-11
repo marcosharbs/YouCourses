@@ -273,46 +273,46 @@ FNF:1
 FNH:1
 end_of_record
 SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\NHibernateUnitOfWork.cs
-FN:23,Core.Domain.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()
-FNDA:7,Core.Domain.IRepository`1<Library.Domain.AuthorAggregate.Model.Author> Library.Data.NHibernateUnitOfWork::get_Authors()
+FN:22,Library.Domain.AuthorAggregate.Repository.IAuthorRepository Library.Data.NHibernateUnitOfWork::get_Authors()
+FNDA:7,Library.Domain.AuthorAggregate.Repository.IAuthorRepository Library.Data.NHibernateUnitOfWork::get_Authors()
+DA:23,7
 DA:24,7
 DA:25,7
-DA:26,7
-FN:31,Core.Domain.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()
-FNDA:4,Core.Domain.IRepository`1<Library.Domain.CourseAggregate.Model.Course> Library.Data.NHibernateUnitOfWork::get_Courses()
+FN:30,Library.Domain.CourseAggregate.Repository.ICourseRepository Library.Data.NHibernateUnitOfWork::get_Courses()
+FNDA:4,Library.Domain.CourseAggregate.Repository.ICourseRepository Library.Data.NHibernateUnitOfWork::get_Courses()
+DA:31,4
 DA:32,4
 DA:33,4
-DA:34,4
-FN:37,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
+FN:36,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
 FNDA:8,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
+DA:37,8
 DA:38,8
 DA:39,8
 DA:40,8
-DA:41,8
-FN:43,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
+FN:42,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
 FNDA:6,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
+DA:43,6
 DA:44,6
 DA:45,6
 DA:46,6
-DA:47,6
-FN:49,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
+FN:48,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
 FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
+DA:49,2
 DA:50,2
 DA:51,2
-DA:52,2
+DA:53,2
 DA:54,2
 DA:55,2
-DA:56,2
-BRDA:51,12,0,2
-BRDA:51,12,1,2
-BRDA:54,37,0,2
-BRDA:54,37,1,2
-FN:15,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
+BRDA:50,12,0,2
+BRDA:50,12,1,2
+BRDA:53,37,0,2
+BRDA:53,37,1,2
+FN:14,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
 FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
+DA:15,2
 DA:16,2
 DA:17,2
 DA:18,2
-DA:19,2
 LF:24
 LH:24
 BRF:4

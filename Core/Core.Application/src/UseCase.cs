@@ -1,7 +1,6 @@
 using Core.Domain;
-using System;
 
-namespace Library.Application
+namespace Core.Application
 {
     public abstract class UseCase<T, U> where U : IUnitOfWork
     {

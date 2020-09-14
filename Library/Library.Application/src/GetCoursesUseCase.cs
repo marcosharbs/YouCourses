@@ -1,6 +1,7 @@
 using Library.Domain;
 using Library.Domain.CourseAggregate.Model;
 using System.Collections.Generic;
+using Core.Application;
 
 namespace Library.Application
 {

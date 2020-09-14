@@ -1,4 +1,5 @@
 using Library.Domain;
+using Core.Application;
 
 namespace Library.Application
 {

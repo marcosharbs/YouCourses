@@ -5,10 +5,10 @@ namespace User.Domain.UserAggregate.Model
 {
     public class User : AggregateRoot
     {
-        public virtual UserName UserName { get; }
-        public virtual UserEmail UserEmail { get; }
-        public virtual UserPassword UserPassword { get; }
-        public virtual UserPicture UserPicture { get; }
+        public virtual UserName UserName { get; protected set; }
+        public virtual UserEmail UserEmail { get; protected set; }
+        public virtual UserPassword UserPassword { get; protected set; }
+        public virtual UserPicture UserPicture { get; protected set; }
 
         protected User() {}
 
@@ -22,6 +22,16 @@ namespace User.Domain.UserAggregate.Model
             UserEmail = userEmail;
             UserPassword = userPassword;
             UserPicture = userPicture;
+        }
+
+        public virtual void UpdateName(string name)
+        {
+            UserName = new UserName(name);
+        }
+
+        public virtual void UpdatePicture(string picture)
+        {
+            UserPicture = new UserPicture(picture);
         }
 
         public static User Create(Guid id, string name, string email, string password, string picture)

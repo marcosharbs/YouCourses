@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Core.Domain;
 using System.Security.Cryptography;
 using System.Text;
-using Dawn;
 
 namespace User.Domain.UserAggregate.Model
 {
@@ -14,11 +13,14 @@ namespace User.Domain.UserAggregate.Model
 
         public UserPassword(string password)
         {
-            Password = CreateMD5(Guard.Argument(password, nameof(password)).NotNull().NotEmpty().MinLength(6));
+            Password = CreateMD5(password);
         }
 
         private string CreateMD5(string input)
         {
+            if(input == null)
+                return "";
+                
             using (MD5 md5 = MD5.Create())
             {
                 byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
@@ -34,7 +36,7 @@ namespace User.Domain.UserAggregate.Model
 
         protected override IEnumerable<object> GetEqualityComponents()
         {
-            throw new System.NotImplementedException();
+            yield return Password;
         }
     }
 }

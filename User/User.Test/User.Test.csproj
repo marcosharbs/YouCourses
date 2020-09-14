@@ -7,10 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.7" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.14.5" />
+    <PackageReference Include="NHibernate" Version="5.3.2" />
+    <PackageReference Include="Npgsql" Version="4.1.4" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.Application\Core.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Domain\Core.Domain.csproj" />
+    <ProjectReference Include="..\User.Application\User.Application.csproj" />
+    <ProjectReference Include="..\User.Data\User.Data.csproj" />
+    <ProjectReference Include="..\User.Domain\User.Domain.csproj" />
   </ItemGroup>
 
 </Project>

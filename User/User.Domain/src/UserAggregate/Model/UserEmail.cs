@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Core.Domain;
-using Dawn;
 
 namespace User.Domain.UserAggregate.Model
 {
@@ -12,7 +11,7 @@ namespace User.Domain.UserAggregate.Model
 
         public UserEmail(string email)
         {
-            Email = Guard.Argument(email, nameof(email)).NotNull().NotEmpty();
+            Email = email;
         }
 
         protected override IEnumerable<object> GetEqualityComponents()

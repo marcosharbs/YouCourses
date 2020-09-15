@@ -29,15 +29,12 @@ namespace Library.Test.Data
             mockCoursesRepository.Setup(mock => mock.GetById(course.Id)).Returns(courseDB);
             mockCoursesRepository.Setup(mock => mock.AddOrUpdate(course));
 
-            var mockUnitOfWork = new Mock<ILibraryUnitOfWork>();
-            mockUnitOfWork.SetupGet(mock => mock.Courses).Returns(mockCoursesRepository.Object);
+            var mockUnitOfWork = new Mock<LibraryUnitOfWork>();
+            mockUnitOfWork.Setup(mock => mock.GetCourseRepository()).Returns(mockCoursesRepository.Object);
 
             var useCase = new UpdateCourseUseCase(course, mockUnitOfWork.Object);
             var updatedCourse = useCase.Execute();
 
-            mockUnitOfWork.Verify(mock => mock.BeginUnit(), Times.Exactly(1));
-            mockUnitOfWork.Verify(mock => mock.CommitUnit(), Times.Exactly(1));
-            mockUnitOfWork.Verify(mock => mock.RollbackUnit(), Times.Never());
             mockCoursesRepository.Verify(mock => mock.GetById(course.Id), Times.Exactly(1));
             mockCoursesRepository.Verify(mock => mock.AddOrUpdate(course), Times.Exactly(1));
             updatedCourse.Should().Be(course);

@@ -9,9 +9,9 @@ namespace Library.RestApi.Controllers
     [Route("api/course")]
     public class CourseController : ControllerBase
     {
-        private readonly ILibraryUnitOfWork _unitOfWork;
+        private readonly LibraryUnitOfWork _unitOfWork;
 
-        public CourseController(ILibraryUnitOfWork unitOfWork)
+        public CourseController(LibraryUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }

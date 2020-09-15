@@ -15,15 +15,12 @@ namespace Library.Test.Data
             var mockCoursesRepository = new Mock<ICourseRepository>();
             mockCoursesRepository.Setup(mock => mock.Count()).Returns(5);
 
-            var mockUnitOfWork = new Mock<ILibraryUnitOfWork>();
-            mockUnitOfWork.SetupGet(mock => mock.Courses).Returns(mockCoursesRepository.Object);
+            var mockUnitOfWork = new Mock<LibraryUnitOfWork>();
+            mockUnitOfWork.Setup(mock => mock.GetCourseRepository()).Returns(mockCoursesRepository.Object);
 
             var useCase = new GetTotalCoursesUseCase(mockUnitOfWork.Object);
             var totalCourses = useCase.Execute();
 
-            mockUnitOfWork.Verify(mock => mock.BeginUnit(), Times.Exactly(1));
-            mockUnitOfWork.Verify(mock => mock.CommitUnit(), Times.Exactly(1));
-            mockUnitOfWork.Verify(mock => mock.RollbackUnit(), Times.Never());
             mockCoursesRepository.Verify(mock => mock.Count(), Times.Exactly(1));
             totalCourses.Should().Be(5);
         }

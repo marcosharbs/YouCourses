@@ -19,7 +19,7 @@ namespace Library.Test.Data
 
             unitOfWork.BeginUnit();
             
-            var authors = unitOfWork.Authors;
+            var authors = unitOfWork.GetAuthorRepository();
             var id = Guid.NewGuid();
             var author = Author.Create(id, "Marcos Harbs", "http://marcos.com/image.jpeg");
             authors.AddOrUpdate(author);
@@ -29,7 +29,7 @@ namespace Library.Test.Data
             unitOfWork.CommitUnit();
             unitOfWork.BeginUnit();
 
-            authors = unitOfWork.Authors;
+            authors = unitOfWork.GetAuthorRepository();
             author = Author.Create(id, "Marcos Harbs Updated", "http://marcos.com/image.jpeg");
             authors.AddOrUpdate(author);
             authorDb = authors.GetById(id);
@@ -51,14 +51,14 @@ namespace Library.Test.Data
             unitOfWork.CommitUnit();
             unitOfWork.BeginUnit();
 
-            authors = unitOfWork.Authors;
+            authors = unitOfWork.GetAuthorRepository();
             authors.Remove(authorDb);
             
             unitOfWork.CommitUnit();
 
             unitOfWork.BeginUnit();
 
-            authors = unitOfWork.Authors;
+            authors = unitOfWork.GetAuthorRepository();
 
             authors.AddOrUpdate(Author.Create("Marcos Harbs Updated", "http://marcos.com/image.jpeg"));
 

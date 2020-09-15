@@ -6,7 +6,7 @@ using Library.Data.Repository;
 
 namespace Library.Data
 {
-    public class NHibernateUnitOfWork : ILibraryUnitOfWork
+    public class NHibernateUnitOfWork : LibraryUnitOfWork
     {
         private ISessionFactory _sessionFactory;
         private ISession _session;
@@ -17,35 +17,29 @@ namespace Library.Data
             _sessionFactory = sessionFactory;
         }
 
-        public IAuthorRepository Authors
+        override public IAuthorRepository GetAuthorRepository()
         {
-            get
-            {
-                return new AuthorRepository(_session);
-            }
+            return new AuthorRepository(_session);
         }
 
-        public ICourseRepository Courses
+        override public ICourseRepository GetCourseRepository()
         {
-            get
-            {
-                return new CourseRepository(_session);
-            }
+            return new CourseRepository(_session);
         }
 
-        public void BeginUnit()
+        override protected void OnBeginUnit()
         {
             _session = _sessionFactory.OpenSession();
             _transaction = _session.BeginTransaction();
         }
 
-        public void CommitUnit()
+        override protected void OnCommitUnit()
         {
             _transaction.Commit();
             _session.Close();
         }
 
-        public void RollbackUnit()
+        override protected void OnRollbackUnit()
         {
             if(_transaction != null)
                  _transaction.Rollback();

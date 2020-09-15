@@ -3,14 +3,14 @@ using Core.Application;
 
 namespace Library.Application
 {
-    public class GetTotalCoursesUseCase : UseCase<int, ILibraryUnitOfWork>
+    public class GetTotalCoursesUseCase : UseCase<int, LibraryUnitOfWork>
     {
 
-        public GetTotalCoursesUseCase(ILibraryUnitOfWork unitOfWork) : base(unitOfWork) { }
+        public GetTotalCoursesUseCase(LibraryUnitOfWork unitOfWork) : base(unitOfWork) { }
 
         protected override int Action()
         {
-            return _unitOfWork.Courses.Count();
+            return _unitOfWork.GetCourseRepository().Count();
         }
     }
 }

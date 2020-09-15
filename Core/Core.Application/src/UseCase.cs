@@ -2,7 +2,7 @@ using Core.Domain;
 
 namespace Core.Application
 {
-    public abstract class UseCase<T, U> where U : IUnitOfWork
+    public abstract class UseCase<T, U> where U : UnitOfWork
     {
         protected U _unitOfWork;
 

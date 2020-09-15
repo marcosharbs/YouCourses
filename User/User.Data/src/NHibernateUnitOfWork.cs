@@ -5,7 +5,7 @@ using User.Data.Repository;
 
 namespace User.Data
 {
-    public class NHibernateUnitOfWork : IUserUnitOfWork
+    public class NHibernateUnitOfWork : UserUnitOfWork
     {
         private ISessionFactory _sessionFactory;
         private ISession _session;
@@ -16,27 +16,24 @@ namespace User.Data
             _sessionFactory = sessionFactory;
         }
 
-        public IUserRepository Users
+        override public IUserRepository GetUserRepository()
         {
-            get
-            {
-                return new UserRepository(_session);
-            }
+            return new UserRepository(_session);
         }
 
-        public void BeginUnit()
+        override protected void OnBeginUnit()
         {
             _session = _sessionFactory.OpenSession();
             _transaction = _session.BeginTransaction();
         }
 
-        public void CommitUnit()
+        override protected void OnCommitUnit()
         {
             _transaction.Commit();
             _session.Close();
         }
 
-        public void RollbackUnit()
+        override protected void OnRollbackUnit()
         {
             if(_transaction != null)
                  _transaction.Rollback();

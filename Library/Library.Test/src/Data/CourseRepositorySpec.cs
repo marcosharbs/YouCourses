@@ -22,8 +22,8 @@ namespace Library.Data.Repository
 
             unitOfWork.BeginUnit();
 
-            var authors = unitOfWork.Authors;
-            var courses = unitOfWork.Courses;
+            var authors = unitOfWork.GetAuthorRepository();
+            var courses = unitOfWork.GetCourseRepository();
 
             var author = Author.Create(authorId, "Marcos Harbs", "");
             var course = Course.Create(courseId, "Curso de JS", "Curso básico de desenvolvimento javascript", author);
@@ -45,8 +45,8 @@ namespace Library.Data.Repository
             unitOfWork.CommitUnit();
             unitOfWork.BeginUnit();
 
-            authors = unitOfWork.Authors;
-            courses = unitOfWork.Courses;
+            authors = unitOfWork.GetAuthorRepository();
+            courses = unitOfWork.GetCourseRepository();
 
             course = courses.GetById(courseId);
             course.RemoveVideos();
@@ -75,8 +75,8 @@ namespace Library.Data.Repository
             unitOfWork.CommitUnit();
             unitOfWork.BeginUnit();
 
-            authors = unitOfWork.Authors;
-            courses = unitOfWork.Courses;
+            authors = unitOfWork.GetAuthorRepository();
+            courses = unitOfWork.GetCourseRepository();
 
             courses.Remove(courseDb);
             authors.Remove(author);
@@ -85,7 +85,7 @@ namespace Library.Data.Repository
 
             unitOfWork.BeginUnit();
 
-            courses = unitOfWork.Courses;
+            courses = unitOfWork.GetCourseRepository();
 
             courses.AddOrUpdate(Course.Create("Curso de JS", "Curso básico de desenvolvimento javascript", author));
 

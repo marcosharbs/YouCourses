@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using User.Data;
 using NHibernate;
 using User.Domain;
+using Core.Domain;
 
 namespace User.RestApi
 {
@@ -14,6 +15,8 @@ namespace User.RestApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            DomainHandlers.Register(typeof(UserHandlerTeste));
+            DomainHandlers.Register(typeof(UserHandlerUpdatedTeste));
         }
 
         public IConfiguration Configuration { get; }
@@ -22,7 +25,7 @@ namespace User.RestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ISessionFactory>(sp => SessionHelper.GetSessionFactory(Configuration.GetSection("Database")["ConnectionSrtring"]));
-            services.AddScoped<IUserUnitOfWork, NHibernateUnitOfWork>();
+            services.AddScoped<UserUnitOfWork, NHibernateUnitOfWork>();
             services.AddControllers();
         }
 

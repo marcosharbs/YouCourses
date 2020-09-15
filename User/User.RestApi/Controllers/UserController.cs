@@ -9,9 +9,9 @@ namespace User.RestApi.Controllers
     [Route("api/user")]
     public class UserController : ControllerBase
     {
-        private readonly IUserUnitOfWork _unitOfWork;
+        private readonly UserUnitOfWork _unitOfWork;
 
-        public UserController(IUserUnitOfWork unitOfWork)
+        public UserController(UserUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }

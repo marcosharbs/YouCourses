@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Library.Data;
 using NHibernate;
 using Library.Domain;
+using Core.Domain;
 
 namespace Library.RestApi
 {
@@ -14,6 +15,7 @@ namespace Library.RestApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            DomainHandlers.Init();
         }
 
         public IConfiguration Configuration { get; }
@@ -22,7 +24,7 @@ namespace Library.RestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ISessionFactory>(sp => SessionHelper.GetSessionFactory(Configuration.GetSection("Database")["ConnectionSrtring"]));
-            services.AddScoped<ILibraryUnitOfWork, NHibernateUnitOfWork>();
+            services.AddScoped<LibraryUnitOfWork, NHibernateUnitOfWork>();
             services.AddControllers();
         }
 

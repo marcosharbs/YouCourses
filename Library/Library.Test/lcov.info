@@ -1,24 +1,24 @@
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Application\src\UseCase.cs
-FN:15,T Library.Application.UseCase`2::Execute()
-FNDA:4,T Library.Application.UseCase`2::Execute()
-DA:16,4
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Core\Core.Application\src\UseCase.cs
+FN:14,T Core.Application.UseCase`2::Execute()
+FNDA:4,T Core.Application.UseCase`2::Execute()
+DA:15,4
+DA:18,4
 DA:19,4
 DA:20,4
 DA:21,4
 DA:22,4
-DA:23,4
+DA:23,0
 DA:24,0
 DA:25,0
 DA:26,0
-DA:27,0
+DA:28,4
 DA:29,4
-DA:30,4
-FN:9,System.Void Library.Application.UseCase`2::.ctor(U)
-FNDA:4,System.Void Library.Application.UseCase`2::.ctor(U)
+FN:8,System.Void Core.Application.UseCase`2::.ctor(U)
+FNDA:4,System.Void Core.Application.UseCase`2::.ctor(U)
+DA:9,4
 DA:10,4
 DA:11,4
 DA:12,4
-DA:13,4
 LF:16
 LH:12
 BRF:0
@@ -26,7 +26,7 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\AggregateRoot.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\AggregateRoot.cs
 FN:7,System.Void Core.Domain.AggregateRoot::.ctor(System.Guid)
 FNDA:150,System.Void Core.Domain.AggregateRoot::.ctor(System.Guid)
 DA:8,150
@@ -40,7 +40,46 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\Entity.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\DomainHandlers.cs
+FN:14,System.Collections.Generic.IEnumerable`1<System.Type> Core.Domain.DomainHandlers::get_Handlers()
+FNDA:0,System.Collections.Generic.IEnumerable`1<System.Type> Core.Domain.DomainHandlers::get_Handlers()
+DA:15,0
+DA:16,0
+DA:17,0
+FN:20,System.Void Core.Domain.DomainHandlers::Init()
+FNDA:0,System.Void Core.Domain.DomainHandlers::Init()
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+BRDA:24,6,0,0
+BRDA:24,6,1,0
+FN:28,System.Void Core.Domain.DomainHandlers::DispatchEvents(T)
+FNDA:0,System.Void Core.Domain.DomainHandlers::DispatchEvents(T)
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+BRDA:30,72,1,0
+BRDA:32,41,0,0
+BRDA:32,41,1,0
+BRDA:30,72,0,0
+LF:19
+LH:0
+BRF:6
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\Entity.cs
 FN:6,System.Guid Core.Domain.Entity::get_Id()
 FNDA:229,System.Guid Core.Domain.Entity::get_Id()
 DA:7,229
@@ -111,7 +150,45 @@ BRH:10
 FNF:7
 FNH:7
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\ValueObject.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\UnitOfWork.cs
+FN:9,System.Void Core.Domain.UnitOfWork::AddEvent(Core.Domain.IDomainEvent)
+FNDA:0,System.Void Core.Domain.UnitOfWork::AddEvent(Core.Domain.IDomainEvent)
+DA:10,0
+DA:11,0
+DA:12,0
+FN:14,System.Void Core.Domain.UnitOfWork::BeginUnit()
+FNDA:12,System.Void Core.Domain.UnitOfWork::BeginUnit()
+DA:15,12
+DA:16,12
+DA:17,12
+FN:19,System.Void Core.Domain.UnitOfWork::CommitUnit()
+FNDA:10,System.Void Core.Domain.UnitOfWork::CommitUnit()
+DA:20,10
+DA:21,10
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:28,10
+DA:29,10
+BRDA:23,47,1,0
+BRDA:23,47,0,10
+FN:31,System.Void Core.Domain.UnitOfWork::RollbackUnit()
+FNDA:2,System.Void Core.Domain.UnitOfWork::RollbackUnit()
+DA:32,2
+DA:33,2
+DA:34,2
+FN:6,System.Void Core.Domain.UnitOfWork::.ctor()
+FNDA:6,System.Void Core.Domain.UnitOfWork::.ctor()
+DA:7,6
+LF:18
+LH:11
+BRF:2
+BRH:1
+FNF:5
+FNH:4
+end_of_record
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Core\Core.Domain\src\ValueObject.cs
 FN:12,System.Boolean Core.Domain.ValueObject`1::Equals(System.Object)
 FNDA:6,System.Boolean Core.Domain.ValueObject`1::Equals(System.Object)
 DA:13,6
@@ -169,18 +246,18 @@ BRH:1
 FNF:6
 FNH:3
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\GetCoursesUseCase.cs
-FN:18,System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Application.GetCoursesUseCase::Action()
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\GetCoursesUseCase.cs
+FN:19,System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Application.GetCoursesUseCase::Action()
 FNDA:1,System.Collections.Generic.ICollection`1<Library.Domain.CourseAggregate.Model.Course> Library.Application.GetCoursesUseCase::Action()
-DA:19,1
 DA:20,1
 DA:21,1
-FN:12,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.ILibraryUnitOfWork)
-FNDA:2,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.ILibraryUnitOfWork)
-DA:13,2
-DA:14,1
+DA:22,1
+FN:13,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.LibraryUnitOfWork)
+FNDA:2,System.Void Library.Application.GetCoursesUseCase::.ctor(System.Int32,System.Int32,Library.Domain.LibraryUnitOfWork)
+DA:14,2
 DA:15,1
 DA:16,1
+DA:17,1
 LF:7
 LH:7
 BRF:0
@@ -188,15 +265,15 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\GetTotalCoursesUseCase.cs
-FN:10,System.Int32 Library.Application.GetTotalCoursesUseCase::Action()
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\GetTotalCoursesUseCase.cs
+FN:11,System.Int32 Library.Application.GetTotalCoursesUseCase::Action()
 FNDA:1,System.Int32 Library.Application.GetTotalCoursesUseCase::Action()
-DA:11,1
 DA:12,1
 DA:13,1
-FN:7,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.ILibraryUnitOfWork)
-FNDA:3,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.ILibraryUnitOfWork)
-DA:8,3
+DA:14,1
+FN:8,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.LibraryUnitOfWork)
+FNDA:3,System.Void Library.Application.GetTotalCoursesUseCase::.ctor(Library.Domain.LibraryUnitOfWork)
+DA:9,3
 LF:4
 LH:4
 BRF:0
@@ -204,20 +281,20 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\SaveCourseUseCase.cs
-FN:16,Library.Domain.CourseAggregate.Model.Course Library.Application.SaveCourseUseCase::Action()
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\SaveCourseUseCase.cs
+FN:17,Library.Domain.CourseAggregate.Model.Course Library.Application.SaveCourseUseCase::Action()
 FNDA:1,Library.Domain.CourseAggregate.Model.Course Library.Application.SaveCourseUseCase::Action()
-DA:17,1
 DA:18,1
 DA:19,1
 DA:20,1
 DA:21,1
-FN:10,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
-FNDA:1,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
-DA:11,1
+DA:22,1
+FN:11,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.LibraryUnitOfWork)
+FNDA:1,System.Void Library.Application.SaveCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.LibraryUnitOfWork)
 DA:12,1
 DA:13,1
 DA:14,1
+DA:15,1
 LF:9
 LH:9
 BRF:0
@@ -225,30 +302,30 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\UpdateCourseUseCase.cs
-FN:16,Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Application\src\UpdateCourseUseCase.cs
+FN:17,Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()
 FNDA:1,Library.Domain.CourseAggregate.Model.Course Library.Application.UpdateCourseUseCase::Action()
-DA:17,1
 DA:18,1
-DA:20,1
-DA:22,1
-DA:24,5
-DA:25,1
+DA:19,1
+DA:21,1
+DA:23,1
+DA:25,5
 DA:26,1
 DA:27,1
-DA:29,1
+DA:28,1
 DA:30,1
-DA:32,1
-DA:34,1
+DA:31,1
+DA:33,1
 DA:35,1
-BRDA:24,81,1,1
-BRDA:24,81,0,1
-FN:10,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
-FNDA:1,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.ILibraryUnitOfWork)
-DA:11,1
+DA:36,1
+BRDA:25,81,1,1
+BRDA:25,81,0,1
+FN:11,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.LibraryUnitOfWork)
+FNDA:1,System.Void Library.Application.UpdateCourseUseCase::.ctor(Library.Domain.CourseAggregate.Model.Course,Library.Domain.LibraryUnitOfWork)
 DA:12,1
 DA:13,1
 DA:14,1
+DA:15,1
 LF:17
 LH:17
 BRF:2
@@ -256,7 +333,7 @@ BRH:2
 FNF:2
 FNH:2
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Config.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Config.cs
 FN:8,Microsoft.Extensions.Configuration.IConfiguration Library.Data.Config::InitConfiguration()
 FNDA:1,Microsoft.Extensions.Configuration.IConfiguration Library.Data.Config::InitConfiguration()
 DA:9,1
@@ -272,41 +349,41 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\NHibernateUnitOfWork.cs
-FN:22,Library.Domain.AuthorAggregate.Repository.IAuthorRepository Library.Data.NHibernateUnitOfWork::get_Authors()
-FNDA:7,Library.Domain.AuthorAggregate.Repository.IAuthorRepository Library.Data.NHibernateUnitOfWork::get_Authors()
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\NHibernateUnitOfWork.cs
+FN:20,Library.Domain.AuthorAggregate.Repository.IAuthorRepository Library.Data.NHibernateUnitOfWork::GetAuthorRepository()
+FNDA:7,Library.Domain.AuthorAggregate.Repository.IAuthorRepository Library.Data.NHibernateUnitOfWork::GetAuthorRepository()
+DA:21,7
+DA:22,7
 DA:23,7
-DA:24,7
-DA:25,7
-FN:30,Library.Domain.CourseAggregate.Repository.ICourseRepository Library.Data.NHibernateUnitOfWork::get_Courses()
-FNDA:4,Library.Domain.CourseAggregate.Repository.ICourseRepository Library.Data.NHibernateUnitOfWork::get_Courses()
-DA:31,4
-DA:32,4
-DA:33,4
-FN:36,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
-FNDA:8,System.Void Library.Data.NHibernateUnitOfWork::BeginUnit()
-DA:37,8
-DA:38,8
-DA:39,8
-DA:40,8
-FN:42,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
-FNDA:6,System.Void Library.Data.NHibernateUnitOfWork::CommitUnit()
-DA:43,6
-DA:44,6
-DA:45,6
-DA:46,6
-FN:48,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
-FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::RollbackUnit()
+FN:25,Library.Domain.CourseAggregate.Repository.ICourseRepository Library.Data.NHibernateUnitOfWork::GetCourseRepository()
+FNDA:4,Library.Domain.CourseAggregate.Repository.ICourseRepository Library.Data.NHibernateUnitOfWork::GetCourseRepository()
+DA:26,4
+DA:27,4
+DA:28,4
+FN:30,System.Void Library.Data.NHibernateUnitOfWork::OnBeginUnit()
+FNDA:8,System.Void Library.Data.NHibernateUnitOfWork::OnBeginUnit()
+DA:31,8
+DA:32,8
+DA:33,8
+DA:34,8
+FN:36,System.Void Library.Data.NHibernateUnitOfWork::OnCommitUnit()
+FNDA:6,System.Void Library.Data.NHibernateUnitOfWork::OnCommitUnit()
+DA:37,6
+DA:38,6
+DA:39,6
+DA:40,6
+FN:42,System.Void Library.Data.NHibernateUnitOfWork::OnRollbackUnit()
+FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::OnRollbackUnit()
+DA:43,2
+DA:44,2
+DA:45,2
+DA:47,2
+DA:48,2
 DA:49,2
-DA:50,2
-DA:51,2
-DA:53,2
-DA:54,2
-DA:55,2
-BRDA:50,12,0,2
-BRDA:50,12,1,2
-BRDA:53,37,0,2
-BRDA:53,37,1,2
+BRDA:44,12,0,2
+BRDA:44,12,1,2
+BRDA:47,37,0,2
+BRDA:47,37,1,2
 FN:14,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
 FNDA:2,System.Void Library.Data.NHibernateUnitOfWork::.ctor(NHibernate.ISessionFactory)
 DA:15,2
@@ -320,7 +397,7 @@ BRH:4
 FNF:6
 FNH:6
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\SessionHelper.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\SessionHelper.cs
 FN:12,NHibernate.ISessionFactory Library.Data.SessionHelper::GetSessionFactory(System.String)
 FNDA:2,NHibernate.ISessionFactory Library.Data.SessionHelper::GetSessionFactory(System.String)
 DA:13,2
@@ -347,7 +424,7 @@ BRH:2
 FNF:1
 FNH:1
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Repository\AuthorRepository.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Repository\AuthorRepository.cs
 FN:18,System.Void Library.Data.Repository.AuthorRepository::AddOrUpdate(Library.Domain.AuthorAggregate.Model.Author)
 FNDA:4,System.Void Library.Data.Repository.AuthorRepository::AddOrUpdate(Library.Domain.AuthorAggregate.Model.Author)
 DA:19,4
@@ -394,7 +471,7 @@ BRH:0
 FNF:7
 FNH:7
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Repository\CourseRepository.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Repository\CourseRepository.cs
 FN:18,System.Void Library.Data.Repository.CourseRepository::AddOrUpdate(Library.Domain.CourseAggregate.Model.Course)
 FNDA:3,System.Void Library.Data.Repository.CourseRepository::AddOrUpdate(Library.Domain.CourseAggregate.Model.Course)
 DA:19,3
@@ -441,7 +518,7 @@ BRH:0
 FNF:7
 FNH:7
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Mapping\AuthorMap.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Mapping\AuthorMap.cs
 FN:7,System.Void Library.Data.Mapping.AuthorMap::.ctor()
 FNDA:6,System.Void Library.Data.Mapping.AuthorMap::.ctor()
 DA:8,6
@@ -461,7 +538,7 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Mapping\CourseMap.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Mapping\CourseMap.cs
 FN:8,System.Void Library.Data.Mapping.CourseMap::.ctor()
 FNDA:6,System.Void Library.Data.Mapping.CourseMap::.ctor()
 DA:9,6
@@ -483,7 +560,7 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Mapping\VideoMap.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Data\src\Mapping\VideoMap.cs
 FN:7,System.Void Library.Data.Mapping.VideoMap::.ctor()
 FNDA:6,System.Void Library.Data.Mapping.VideoMap::.ctor()
 DA:8,6
@@ -503,7 +580,7 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\Course.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\Course.cs
 FN:11,Library.Domain.CourseAggregate.Model.CourseName Library.Domain.CourseAggregate.Model.Course::get_CourseName()
 FNDA:39,Library.Domain.CourseAggregate.Model.CourseName Library.Domain.CourseAggregate.Model.Course::get_CourseName()
 DA:12,39
@@ -594,7 +671,7 @@ BRH:2
 FNF:16
 FNH:16
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\CourseDescription.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\CourseDescription.cs
 FN:8,System.String Library.Domain.CourseAggregate.Model.CourseDescription::get_Description()
 FNDA:4,System.String Library.Domain.CourseAggregate.Model.CourseDescription::get_Description()
 DA:9,4
@@ -623,7 +700,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\CourseName.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\CourseName.cs
 FN:8,System.String Library.Domain.CourseAggregate.Model.CourseName::get_Name()
 FNDA:4,System.String Library.Domain.CourseAggregate.Model.CourseName::get_Name()
 DA:9,4
@@ -651,7 +728,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\Video.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\Video.cs
 FN:7,Library.Domain.CourseAggregate.Model.VideoName Library.Domain.CourseAggregate.Model.Video::get_VideoName()
 FNDA:2,Library.Domain.CourseAggregate.Model.VideoName Library.Domain.CourseAggregate.Model.Video::get_VideoName()
 DA:8,2
@@ -690,7 +767,7 @@ BRH:0
 FNF:7
 FNH:7
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\VideoName.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\VideoName.cs
 FN:8,System.String Library.Domain.CourseAggregate.Model.VideoName::get_Name()
 FNDA:2,System.String Library.Domain.CourseAggregate.Model.VideoName::get_Name()
 DA:9,2
@@ -715,7 +792,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\VideoUrl.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\CourseAggregate\Model\VideoUrl.cs
 FN:8,System.String Library.Domain.CourseAggregate.Model.VideoUrl::get_Url()
 FNDA:64,System.String Library.Domain.CourseAggregate.Model.VideoUrl::get_Url()
 DA:9,64
@@ -740,7 +817,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\Author.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\Author.cs
 FN:7,Library.Domain.AuthorAggregate.Model.AuthorName Library.Domain.AuthorAggregate.Model.Author::get_AuthorName()
 FNDA:4,Library.Domain.AuthorAggregate.Model.AuthorName Library.Domain.AuthorAggregate.Model.Author::get_AuthorName()
 DA:8,4
@@ -774,7 +851,7 @@ BRH:0
 FNF:6
 FNH:6
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\AuthorName.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\AuthorName.cs
 FN:8,System.String Library.Domain.AuthorAggregate.Model.AuthorName::get_Name()
 FNDA:4,System.String Library.Domain.AuthorAggregate.Model.AuthorName::get_Name()
 DA:9,4
@@ -799,7 +876,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:C:\Users\marco\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\AuthorPicture.cs
+SF:c:\Users\marcos.harbs\Documents\Projetos\Pessoal\YouCourses\Library\Library.Domain\src\AuthorAggregate\Model\AuthorPicture.cs
 FN:7,System.String Library.Domain.AuthorAggregate.Model.AuthorPicture::get_ImageUrl()
 FNDA:2,System.String Library.Domain.AuthorAggregate.Model.AuthorPicture::get_ImageUrl()
 DA:8,2

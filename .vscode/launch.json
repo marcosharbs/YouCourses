@@ -5,7 +5,7 @@
    "version": "0.2.0",
    "configurations": [
         {
-            "name": ".NET Core Launch (console)",
+            "name": ".NET Core Launch Library (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -13,6 +13,19 @@
             "program": "${workspaceFolder}/Library/Library.RestApi/bin/Debug/netcoreapp3.1/Library.RestApi.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Library/Library.RestApi",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Launch User (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/User/User.RestApi/bin/Debug/netcoreapp3.1/User.RestApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/User/User.RestApi",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.RestApi", "User.RestAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Test", "User.Test\User.Test.csproj", "{92791D1C-E839-43A2-8CC4-86103D497348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Infrastructure", "User.Infrastructure\User.Infrastructure.csproj", "{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +88,17 @@ Global
 		{92791D1C-E839-43A2-8CC4-86103D497348}.Release|x64.Build.0 = Release|Any CPU
 		{92791D1C-E839-43A2-8CC4-86103D497348}.Release|x86.ActiveCfg = Release|Any CPU
 		{92791D1C-E839-43A2-8CC4-86103D497348}.Release|x86.Build.0 = Release|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Debug|x64.Build.0 = Debug|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Debug|x86.Build.0 = Debug|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Release|x64.ActiveCfg = Release|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Release|x64.Build.0 = Release|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F9EBCCC-5B65-4565-B804-EB5406D6DA9B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

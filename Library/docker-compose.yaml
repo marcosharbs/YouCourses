@@ -17,3 +17,12 @@ services:
     restart: always
     ports:
       - 8080:8080
+
+  broker:
+    image: rabbitmq:3-management
+    environment:
+        - RABBITMQ_DEFAULT_USER=admin
+        - RABBITMQ_DEFAULT_PASS=admin
+    ports:
+      - "15672:15672"
+      - "5672:5672"

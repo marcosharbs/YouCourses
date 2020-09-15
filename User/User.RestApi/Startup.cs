@@ -7,6 +7,7 @@ using User.Data;
 using NHibernate;
 using User.Domain;
 using Core.Domain;
+using User.Infrastructure;
 
 namespace User.RestApi
 {
@@ -15,8 +16,8 @@ namespace User.RestApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            DomainHandlers.Register(typeof(UserHandlerTeste));
-            DomainHandlers.Register(typeof(UserHandlerUpdatedTeste));
+            DomainHandlers.Register(typeof(UserCreatedHandler));
+            DomainHandlers.Register(typeof(UserUpdatedHandler));
         }
 
         public IConfiguration Configuration { get; }

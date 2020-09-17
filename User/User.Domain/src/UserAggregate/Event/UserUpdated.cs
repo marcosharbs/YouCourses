@@ -5,7 +5,6 @@ namespace User.Domain.UserAggregate.Event
 {
     public class UserUpdated : DomainEvent
     {
-        public Guid Id { get; protected set; }
         public string Name { get; protected set; }
         public string Email { get; protected set; }
         public string ImageUrl { get; protected set; }

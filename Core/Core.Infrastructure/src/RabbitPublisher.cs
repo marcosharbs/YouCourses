@@ -13,7 +13,7 @@ namespace Core.Infrastructure
             var exchangeName = $"TOPIC/{typeNames[0]}";
             var routeKey = $"{typeNames[0]}.{typeNames[1]}.{payload.Id}";
             var payloadBody = System.Text.Encoding.UTF8.GetBytes(JsonSerializer.Serialize(payload));
-            RabbitHelper.RabbitChannel.ExchangeDeclare(exchangeName, ExchangeType.Fanout);
+            RabbitHelper.RabbitChannel.ExchangeDeclare(exchangeName, ExchangeType.Fanout, true, false);
             RabbitHelper.RabbitChannel.BasicPublish(exchangeName, routeKey, null, payloadBody);
         }
     }

@@ -13,7 +13,7 @@ namespace Core.Domain
             _handlers.Add(handler);
         }
 
-        public static void DispatchEvent(IDomainEvent domainEvent)
+        public static void DispatchEvent(DomainEvent domainEvent)
         {
             foreach (Type handlerType in _handlers)
             {

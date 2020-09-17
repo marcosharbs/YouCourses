@@ -4,9 +4,9 @@ namespace Core.Domain
 {
     public abstract class UnitOfWork
     {
-        private List<IDomainEvent> _events = new List<IDomainEvent>();
+        private List<DomainEvent> _events = new List<DomainEvent>();
 
-        public void AddEvent(IDomainEvent domainEvent)
+        public void AddEvent(DomainEvent domainEvent)
         {
             _events.Add(domainEvent);
         }

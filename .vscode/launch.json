@@ -8,6 +8,7 @@
             "name": ".NET Core Launch Library (console)",
             "type": "coreclr",
             "request": "launch",
+            "requireExactSource": false,
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/Library/Library.RestApi/bin/Debug/netcoreapp3.1/Library.RestApi.dll",
@@ -21,6 +22,7 @@
             "name": ".NET Core Launch User (console)",
             "type": "coreclr",
             "request": "launch",
+            "requireExactSource": false,
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/User/User.RestApi/bin/Debug/netcoreapp3.1/User.RestApi.dll",

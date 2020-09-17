@@ -3,14 +3,14 @@ using Core.Domain;
 
 namespace User.Domain.UserAggregate.Event
 {
-    public class UserUpdated : IDomainEvent
+    public class UserUpdated : DomainEvent
     {
         public Guid Id { get; protected set; }
         public string Name { get; protected set; }
         public string Email { get; protected set; }
         public string ImageUrl { get; protected set; }
 
-        private UserUpdated(Guid id, string name, string email, string imageUrl) {
+        private UserUpdated(Guid id, string name, string email, string imageUrl) : base(id) {
             Id = id;
             Name = name;
             Email = email;

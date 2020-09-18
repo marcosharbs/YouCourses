@@ -1,4 +1,6 @@
 using RabbitMQ.Client;
+using System.Collections.Generic;
+using System;
 
 namespace Core.Infrastructure
 {
@@ -6,7 +8,7 @@ namespace Core.Infrastructure
     {
         private static IConnection _conn;
 
-        private static IModel _channel;
+        private static Dictionary<string, IModel> _channels = new Dictionary<string, IModel>();
 
         public static IConnection RabbitConnection
         {
@@ -25,16 +27,16 @@ namespace Core.Infrastructure
             }
         }
 
-        public static IModel RabbitChannel
+        public static IModel GetRabbitChannel(string name)
         {
-            get
+            Console.WriteLine("THREAD NAME ->");
+            Console.WriteLine(name);
+            if(_channels.ContainsKey(name) && _channels[name].IsOpen)
             {
-                if(_channel == null || !_channel.IsOpen) 
-                {
-                    _channel = RabbitConnection.CreateModel();
-                }
-                return _channel;
+                return _channels[name];
             }
+            _channels[name] = RabbitConnection.CreateModel();
+            return _channels[name];
         }
     }    
 }

@@ -18,6 +18,9 @@ namespace User.RestApi
             Configuration = configuration;
             DomainHandlers.Register(typeof(UserCreatedHandler));
             DomainHandlers.Register(typeof(UserUpdatedHandler));
+            new UserConsumer().init("LIBRARY");
+            new UserCreatedConsumer().init("LIBRARY");
+            new UserUpdatedConsumer().init("LIBRARY");
         }
 
         public IConfiguration Configuration { get; }

@@ -15,11 +15,12 @@ namespace Core.Infrastructure
         public void Publish(T payload)
         {
             var typeNames = Regex.Split(payload.GetType().Name, @"(?<!^)(?=[A-Z])");
-            var exchangeName = $"TOPIC/{typeNames[0]}";
-            var routeKey = $"{typeNames[0]}.{typeNames[1]}.{payload.Id}";
+            var exchangeName = $"TOPIC/{typeNames[0].ToUpper()}";
+            var routeKey = $"{typeNames[0].ToLower()}.{typeNames[1].ToLower()}.{payload.Id}";
             var payloadBody = System.Text.Encoding.UTF8.GetBytes(JsonSerializer.Serialize(payload, _jsonSerializerOptions));
-            RabbitHelper.RabbitChannel.ExchangeDeclare(exchangeName, ExchangeType.Topic, true, false);
-            RabbitHelper.RabbitChannel.BasicPublish(exchangeName, routeKey, null, payloadBody);
+            var channelName = $"{exchangeName}";
+            RabbitHelper.GetRabbitChannel(channelName).ExchangeDeclare(exchangeName, ExchangeType.Topic, true, false);
+            RabbitHelper.GetRabbitChannel(channelName).BasicPublish(exchangeName, routeKey, null, payloadBody);
         }
     }
 }

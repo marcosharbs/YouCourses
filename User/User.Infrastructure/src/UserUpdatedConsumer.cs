@@ -15,6 +15,11 @@ namespace User.Infrastructure
             Console.WriteLine(payload.ImageUrl);
             Console.WriteLine("------------------------");
         }
+
+        protected override int GetConsumersCount()
+        {
+            return 20;
+        }
     }
 
     public class UserCreatedConsumer : RabbitConsumer<UserTeste>
@@ -42,6 +47,11 @@ namespace User.Infrastructure
             Console.WriteLine(payload.Email);
             Console.WriteLine(payload.ImageUrl);
             Console.WriteLine("------------------------");
+        }
+
+        protected override int GetConsumersCount()
+        {
+            return 20;
         }
     }
 

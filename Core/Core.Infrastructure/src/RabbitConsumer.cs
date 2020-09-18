@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Core.Infrastructure
 {
     public abstract class RabbitConsumer<T>
     {
-        private List<EventingBasicConsumer> _consumers = new List<EventingBasicConsumer>();
+        private List<AsyncEventingBasicConsumer> _consumers = new List<AsyncEventingBasicConsumer>();
 
         private JsonSerializerOptions _jsonSerializerOptions = new JsonSerializerOptions()
         {
@@ -24,21 +25,23 @@ namespace Core.Infrastructure
         {
             var exchangeName = GetTopicName();
             var queueName = GetQueueName(domain);
-            var channelName = $"{queueName}_{Thread.CurrentThread.ManagedThreadId}";
-
-            RabbitHelper.GetRabbitChannel(channelName).ExchangeDeclare(exchangeName, ExchangeType.Topic, true, false);
-            RabbitHelper.GetRabbitChannel(channelName).QueueDeclare(queueName, true, false, false, null);
-            RabbitHelper.GetRabbitChannel(channelName).QueueBind(queueName, exchangeName, GetRoutingKey(), null);
 
             for(var i = 0; i < GetConsumersCount(); i++)
             {
-                var consumer = new EventingBasicConsumer(RabbitHelper.GetRabbitChannel(channelName));
-                consumer.Received += (ch, ea) =>
+                var channelName = $"{queueName}_{Thread.CurrentThread.ManagedThreadId}+{i}";
+
+                RabbitHelper.GetRabbitChannel(channelName).ExchangeDeclare(exchangeName, ExchangeType.Topic, true, false);
+                RabbitHelper.GetRabbitChannel(channelName).QueueDeclare(queueName, true, false, false, null);
+                RabbitHelper.GetRabbitChannel(channelName).QueueBind(queueName, exchangeName, GetRoutingKey(), null);
+
+                var consumer = new AsyncEventingBasicConsumer(RabbitHelper.GetRabbitChannel(channelName));
+                consumer.Received += async (ch, ea) =>
                 {
                     var body = System.Text.Encoding.UTF8.GetString(ea.Body.ToArray());
                     T payload = JsonSerializer.Deserialize<T>(body, _jsonSerializerOptions);
                     Process(payload);
                     RabbitHelper.GetRabbitChannel(channelName).BasicAck(ea.DeliveryTag, false);
+                    await Task.Yield();
                 };
                 RabbitHelper.GetRabbitChannel(channelName).BasicConsume(queueName, false, consumer);
                 _consumers.Add(consumer);

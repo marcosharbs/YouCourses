@@ -1,6 +1,5 @@
 using RabbitMQ.Client;
 using System.Collections.Generic;
-using System;
 
 namespace Core.Infrastructure
 {
@@ -17,6 +16,7 @@ namespace Core.Infrastructure
                 if(_conn == null || !_conn.IsOpen) 
                 {
                     ConnectionFactory factory = new ConnectionFactory();
+                    factory.DispatchConsumersAsync = true;
                     factory.UserName = "admin";
                     factory.Password = "admin";
                     factory.VirtualHost = "/";
@@ -29,8 +29,6 @@ namespace Core.Infrastructure
 
         public static IModel GetRabbitChannel(string name)
         {
-            Console.WriteLine("THREAD NAME ->");
-            Console.WriteLine(name);
             if(_channels.ContainsKey(name) && _channels[name].IsOpen)
             {
                 return _channels[name];

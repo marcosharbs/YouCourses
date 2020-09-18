@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="NHibernate" Version="5.3.2" />
+    <PackageReference Include="Npgsql" Version="4.1.4" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.Domain\Core.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Infrastructure\Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
+    <ProjectReference Include="..\Library.Data\Library.Data.csproj" />
+    <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Core.Application\Core.Application.csproj" />
+  </ItemGroup>
+
+</Project>

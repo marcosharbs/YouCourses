@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Library.Data;
 using NHibernate;
 using Library.Domain;
-using Core.Domain;
+using Library.Infrastructure;
 
 namespace Library.RestApi
 {
@@ -15,7 +15,7 @@ namespace Library.RestApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            DomainHandlers.Init();
+            new UserUpdatedConsumer().Init("LIBRARY");
         }
 
         public IConfiguration Configuration { get; }

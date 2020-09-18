@@ -5,8 +5,8 @@ namespace Library.Domain.AuthorAggregate.Model
 {
     public class Author : AggregateRoot
     {
-        public virtual AuthorName AuthorName { get; }
-        public virtual AuthorPicture AuthorPicture { get; }
+        public virtual AuthorName AuthorName { get; protected set; }
+        public virtual AuthorPicture AuthorPicture { get; protected set; }
 
         protected Author() {}
 
@@ -14,6 +14,16 @@ namespace Library.Domain.AuthorAggregate.Model
         {
             AuthorName = authorName;
             AuthorPicture = authorPicture;
+        }
+
+        public virtual void UpdateName(string name)
+        {
+            AuthorName = new AuthorName(name);
+        }
+
+        public virtual void UpdatePicture(string picture)
+        {
+            AuthorPicture = new AuthorPicture(picture);
         }
 
         public static Author Create(Guid id, string name, string imageUrl)

@@ -55,14 +55,6 @@ namespace Library.Test.Data
             authors.Remove(authorDb);
             
             unitOfWork.CommitUnit();
-
-            unitOfWork.BeginUnit();
-
-            authors = unitOfWork.GetAuthorRepository();
-
-            authors.AddOrUpdate(Author.Create("Marcos Harbs Updated", "http://marcos.com/image.jpeg"));
-
-            unitOfWork.RollbackUnit();
         }
     }
 }

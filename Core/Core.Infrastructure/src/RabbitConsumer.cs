@@ -21,7 +21,7 @@ namespace Core.Infrastructure
             IgnoreReadOnlyProperties = true
         };
 
-        public void init(string domain)
+        public void Init(string domain)
         {
             var exchangeName = GetTopicName();
             var queueName = GetQueueName(domain);

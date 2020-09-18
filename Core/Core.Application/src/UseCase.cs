@@ -13,18 +13,9 @@ namespace Core.Application
 
         public T Execute()
         {
-            T result;
-            try
-            {
-                _unitOfWork.BeginUnit();
-                result = Action();
-                _unitOfWork.CommitUnit();
-            }
-            catch
-            {
-                _unitOfWork.RollbackUnit();
-                throw;
-            }
+            _unitOfWork.BeginUnit();
+            T result = Action();
+            _unitOfWork.CommitUnit();
             return result;
         }
 

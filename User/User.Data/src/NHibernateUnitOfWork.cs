@@ -32,14 +32,5 @@ namespace User.Data
             _transaction.Commit();
             _session.Close();
         }
-
-        override protected void OnRollbackUnit()
-        {
-            if(_transaction != null)
-                 _transaction.Rollback();
-
-            if(_session != null)
-                _session.Close();
-        }
     }
 }

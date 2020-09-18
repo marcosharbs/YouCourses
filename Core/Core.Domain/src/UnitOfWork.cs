@@ -28,14 +28,7 @@ namespace Core.Domain
             _events.Clear();
         }
         
-        public void RollbackUnit()
-        {
-            OnRollbackUnit();
-            _events.Clear();
-        }
-        
         protected abstract void OnBeginUnit();
         protected abstract void OnCommitUnit();
-        protected abstract void OnRollbackUnit();
     }
 }

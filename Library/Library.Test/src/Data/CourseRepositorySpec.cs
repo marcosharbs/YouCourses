@@ -82,14 +82,6 @@ namespace Library.Data.Repository
             authors.Remove(author);
 
             unitOfWork.CommitUnit();
-
-            unitOfWork.BeginUnit();
-
-            courses = unitOfWork.GetCourseRepository();
-
-            courses.AddOrUpdate(Course.Create("Curso de JS", "Curso básico de desenvolvimento javascript", author));
-
-            unitOfWork.RollbackUnit();
         }
     }
 }

@@ -15,7 +15,7 @@ namespace Library.Test.Data
         {
            var appsettings = Config.InitConfiguration();
 
-            var unitOfWork = new NHibernateUnitOfWork(SessionHelper.GetSessionFactory(appsettings.GetSection("Database")["ConnectionSrtring"]));
+            var unitOfWork = NHibernateUnitOfWork.Create(appsettings.GetSection("Database")["ConnectionSrtring"]);
 
             unitOfWork.BeginUnit();
             

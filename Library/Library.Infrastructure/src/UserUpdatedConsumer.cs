@@ -8,10 +8,9 @@ namespace Library.Infrastructure
     {
         protected override void Process(UserBroker payload)
         {
-            var databaseConnection = "Server=127.0.0.1;Port=5432;User ID=postgres;Password=admin;Database=YouCourse.Library";
-            var sessionFactory = SessionHelper.GetSessionFactory(databaseConnection);
-            var unitOfWork = new NHibernateUnitOfWork(sessionFactory);
-            var useCase = new UpdateAuthorUseCase(payload.ToDomain(), unitOfWork);
+            //TODO: get database url from application configs.
+            var databaseUrl = "Server=127.0.0.1;Port=5432;User ID=postgres;Password=admin;Database=YouCourse.Library";
+            var useCase = new UpdateAuthorUseCase(payload.ToDomain(), NHibernateUnitOfWork.Create(databaseUrl));
             useCase.Execute();
         }
     }

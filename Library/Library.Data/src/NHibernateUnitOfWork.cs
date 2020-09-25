@@ -17,6 +17,12 @@ namespace Library.Data
             _sessionFactory = sessionFactory;
         }
 
+        public static NHibernateUnitOfWork Create(string databaseUrl)
+        {
+            var sessionFactory = SessionHelper.GetSessionFactory(databaseUrl);
+            return new NHibernateUnitOfWork(sessionFactory);
+        }
+
         override public IAuthorRepository GetAuthorRepository()
         {
             return new AuthorRepository(_session);

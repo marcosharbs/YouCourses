@@ -18,9 +18,8 @@ namespace Core.Infrastructure
             var exchangeName = $"TOPIC/{typeNames[0].ToUpper()}";
             var routeKey = $"{typeNames[0].ToLower()}.{typeNames[1].ToLower()}.{payload.Id}";
             var payloadBody = System.Text.Encoding.UTF8.GetBytes(JsonSerializer.Serialize(payload, _jsonSerializerOptions));
-            var channelName = $"{exchangeName}";
-            RabbitHelper.GetRabbitChannel(channelName).ExchangeDeclare(exchangeName, ExchangeType.Topic, true, false);
-            RabbitHelper.GetRabbitChannel(channelName).BasicPublish(exchangeName, routeKey, null, payloadBody);
+            RabbitHelper.GetRabbitChannel(exchangeName).ExchangeDeclare(exchangeName, ExchangeType.Topic, true, false);
+            RabbitHelper.GetRabbitChannel(exchangeName).BasicPublish(exchangeName, routeKey, null, payloadBody);
         }
     }
 }

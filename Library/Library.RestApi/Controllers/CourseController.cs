@@ -6,7 +6,7 @@ using Library.RestApi.Model;
 namespace Library.RestApi.Controllers
 {
     [ApiController]
-    [Route("api/course")]
+    [Route("v1/api/courses")]
     public class CourseController : ControllerBase
     {
         private readonly LibraryUnitOfWork _unitOfWork;

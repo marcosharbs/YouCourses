@@ -31,7 +31,11 @@ namespace User.RestApi.Model
 
         public static User.Domain.UserAggregate.Model.User ToDomain(UserApi user)
         {
-            return User.Domain.UserAggregate.Model.User.Create(user.Id, user.Name, user.Email, user.Password, user.ImageUrl);
+            return User.Domain.UserAggregate.Model.User.Create(user.Id, 
+                                                               user.Name, 
+                                                               user.Email, 
+                                                               user.Password, 
+                                                               user.ImageUrl);
         }
     }
 }

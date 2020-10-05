@@ -6,7 +6,7 @@ using User.RestApi.Model;
 namespace User.RestApi.Controllers
 {
     [ApiController]
-    [Route("api/user")]
+    [Route("v1/api/users")]
     public class UserController : ControllerBase
     {
         private readonly UserUnitOfWork _unitOfWork;

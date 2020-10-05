@@ -15,7 +15,11 @@ namespace Library.RestApi.Model
 
         public CourseApi() { }
 
-        private CourseApi(Guid id, string name, string description, AuthorApi author, IEnumerable<VideoApi> videos)
+        private CourseApi(Guid id,
+                          string name, 
+                          string description, 
+                          AuthorApi author, 
+                          IEnumerable<VideoApi> videos)
         {
             Id = id;
             Name = name;
